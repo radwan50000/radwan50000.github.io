@@ -1,0 +1,66 @@
+#main{
+    height: auto;
+}
+
+#main section{
+    height: auto;
+}
+#main section:not(:first-child){
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+/* the available travels section  */
+#available-travels{
+    padding: 100px 60px 50px 60px;
+    position: relative;
+    width: 85%;
+    margin: 0px auto 0px auto;
+    background-color: #eee;
+    border-radius: 30px;
+}
+
+#available-travels::before{
+    content: "available travels";
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: auto ;
+    height: auto;
+    font-size: 50px;
+    font-weight: 1000;
+    background: var(--linear-gradient-blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* End of available travel section */
+
+/* start of travel details */
+
+#travels-details{
+    padding: 100px 60px 50px 60px;
+    position: relative;
+    width: 85%;
+    margin: 0px auto 0px auto;
+    background-color: #eee;
+    border-radius: 30px;
+}
+
+#travels-details::before{
+    content: "travels details";
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: auto ;
+    height: auto;
+    font-size: 50px;
+    font-weight: 1000;
+    background: var(--linear-gradient-blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* End of travel details */

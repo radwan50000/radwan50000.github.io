@@ -1,0 +1,49 @@
+#footer{
+    width: 100%;
+    height: 40vh;
+    background: var(--linear-gradient-blue);
+    color: black;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    
+}
+
+#info{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto 0px auto;
+    padding: 0px 40px 0px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+}
+
+#info ul li{
+    list-style: circle;
+    transition: 0.4s;
+    margin: 0px 0px 20px 0px;
+}
+
+#info ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#info ul li:not(:last-child) span:last-child{
+    border:2px solid white;
+    padding: 4px
+}
+
+.copyElement{
+    font-size: 20px;
+    margin-left: 10px;
+    /* color: black; */
+    cursor: pointer;
+}
+
+.footer-logo{
+    font-size: 20px;
+    margin-left: 10px;
+    /* color: black; */
+}
