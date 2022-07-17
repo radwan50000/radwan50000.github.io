@@ -18,11 +18,11 @@ body{
 #headerContainer{
     width: 100%;
     height: 70vh;
-    /* background-image: url("../images/logo.jpg"); */
+    background-image: url("../images/Untitled-4.png");
     background-color: black;
     background-repeat: no-repeat;
-    background-position: center -300px;
-    background-size: cover;
+    background-position: center center;
+    background-size: 1600px;
     box-shadow: 0px 5px 20px black;
 }
 
@@ -120,6 +120,7 @@ section{
     overflow: hidden;
     display: none;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.397);
+    z-index: 99999;
 }
 
 #topButtonContainer::before{
@@ -149,7 +150,7 @@ section{
 #footerContainer{
     width: 100%;
     height: 40vh;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.767);
     position: relative;
 }
 
