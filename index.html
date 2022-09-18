@@ -1,80 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="./images/Untitled-3.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="./css/boxReload.css" rel="stylesheet">
-    <link href="./css/homeStyle.css" rel="stylesheet">
-    <link href="./css/all.min.css" rel="stylesheet">
-    <link href="./css/fontawesome.min.css" rel="stylesheet">
+    <link rel="icon" href="./images/skills.ico">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BFGD</title>
+    <title>Life</title>
 </head>
 <body>
-    <!-- the div contains all the page elements -->
-    <div id="pageContainer">
-        <!-- the start of the page -->
-        <header>
-            <div id="headerContainer"></div>
-        </header>
-        <main>
-            <section class="columnsContainer" id="logos">
-                <img src="./images/dragon.jpg" alt="dragon" title="dragon">
-                <img src="./images/flowerVase.png" alt="flower vase" title="flower vase">
-                <img src="./images/insectWrold.png" alt="insect world" title="insect world">
-            </section>
-            <section class="columnsContainer" id="designs">
-                <img src="./images/dragon.jpg" alt="dragon" title="dragon">
-                <img src="./images/flowerVase.png" alt="flower vase" title="flower vase">
-                <img src="./images/insectWrold.png" alt="insect world" title="insect world">
-                <img src="./images/dragon.jpg" alt="dragon" title="dragon">
-                <img src="./images/flowerVase.png" alt="flower vase" title="flower vase">
-                <img src="./images/insectWrold.png" alt="insect world" title="insect world">
-            </section>
-            <section class="columnsContainer" id="sketches">
-                <img src="./images/dragon.jpg" alt="dragon" title="dragon">
-                <img src="./images/flowerVase.png" alt="flower vase" title="flower vase">
-                <img src="./images/insectWrold.png" alt="insect world" title="insect world">
-                <img src="./images/dragon.jpg" alt="dragon" title="dragon">
-                <img src="./images/flowerVase.png" alt="flower vase" title="flower vase">
-                <img src="./images/insectWrold.png" alt="insect world" title="insect world">
-            </section>
-        </main>
-        <div id="topButtonContainer">
-            <i class="fa-solid fa-angle-up"></i>
-        </div>
-        <footer id="footerContainer">
-            <div id="footerContentContainer">
-                <ul>
-                    <li><a href="https://facebook.com" target="_blank">Facebook.com</a></li>
-                    <li><a href="https://instgram.com" target="_blank">Instgram.com</a></li>
-                    <li><a href="https://twitter.com" target="_blank">Twitter.com</a></li>
-                </ul>
+    <header></header>
+    <!--End of The Header-->
+    <section id="skills">
+        <div id="skills-container">
+            <div id="skills-header">
+                <img src="./images/skills.png" alt="skills">
+                <h1>skills</h1>
             </div>
-        </footer>
-        <!-- the End of the Page -->
-    </div>
-    <!-- ********************************************************************************************* -->
-    <!-- animation box part -->
-    <div id="loadingBox">
-        <div id="loadingHeadingContainer">
-            <h1>Loading</h1>
-        </div>
-        <div id="containerBox">
-            <div id="box">
-                <div class="cards" id="top"></div>
-                <div class="cards" id="front"></div>
-                <div class="cards" id="back"></div>
-                <div class="cards" id="bottom"></div>
-                <div class="cards" id="right"></div>
-                <div class="cards" id="left"></div>
+            <div id="skills-image-container">
+                <div class="skill-box">
+                    <img src="./images/code images/html-5.png" alt="HTML">
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill-box">
+                    <img src="./images/code images/css-3.png" alt="CSS">
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill-box">
+                    <img src="./images/code images/js.png" alt="JavaScript">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skill-box">
+                    <img src="./images/code images/sass.png" alt="SASS">
+                    <h4>SASS</h4>
+                </div>
             </div>
         </div>
+    </section>
+    <!--End of skills part-->
+    <!--the sections title-->
+    <div id="tasksSectionTitle">
+        <div></div>
     </div>
-    <script src="./javascript/homeJS.js"></script>
+    <!--Start of Tasks List-->
+    <section id="tasks">
+        <div id="tasks-container">
+            <div id="tasks-box">
+                <input type="text" placeholder="New Task" id="input-new-task">
+                <div id="button-div">
+                    <div id="submit-task-button">ADD TASK</div>
+                </div>
+                <hr>
+                <div id="lists-container">
+                    <input type="text" placeholder="Filter Tasks" id="filter-tasks">
+                </div>
+                <div id="clear-tasks-div">
+                    <div id="clear-tasks-button">
+                        Clear Tasks
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Tasks List-->
+    <!--Start of Books part-->
+    <!--the sections title-->
+    <div id="bookSectionTitle">
+        <div></div>
+    </div>
+    <section id="books">
+        <div id="books-space-container">
+            <div id="books-container">
+                <div id="input-book-title-container" class="inputs-container">
+                    <input type="text" class="books-input-text" id="input-book-title">
+                </div>
+                <div id="input-book-author-container" class="inputs-container">
+                    <input type="text" class="books-input-text" id="input-book-author">
+                </div>
+                <div id="input-book-isbn-container" class="inputs-container">
+                    <input type="text" class="books-input-text" id="input-book-isbn">
+                </div>
+                <div id="submit-book-data-button">submit</div>
+                <div id="books-list">
+                    <div class="books-details-container">
+                        <span class="book-detail">Title</span>
+                        <span class="book-detail">Author</span>
+                        <span class="book-detail">ISBN</span>
+                        <span class="book-detail"></span>
+                    </div>
+                </div>
+                <div id="remove-books-div">
+                    <div id="remove-books-button">
+                        Clear Books
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Books part-->
+    <!--Start of the Weather Part-->
+    <div id="weatherSectionTitle">
+        <div></div>
+    </div>
+    <section id="weather">
+        <div id="weatherDivContainer">
+            <div id="weatherDiv">
+                <div id="showWeatherDegree">
+                    <p id="weatherDegree"></p>
+                    <img src="#" alt="Weather State image" id="weather-sky-image">
+                </div>
+                <div id="weatherDetails">
+                    <div id="skyDescrip">Weather Condition: </div>
+                    <div id="humidity">Humidty: </div>
+                    <div id="maxTemp">Max Temperature: </div>
+                    <div id="minTemp">Min Temperature: </div>
+                    <div id="state">State: </div>
+                    <div id="country">Country: </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of the Weather Part-->
+    <!--Start of the sections elevator-->
+    <div id="sectionsElevator">
+        <div id="top-section-part" class="selectSection">
+            <img src="./images/section-images/top.png" alt="top-image">
+            <p>Top</p>
+        </div>
+        <div id="tasks-section-part" class="selectSection">
+            <img src="./images/section-images/task.png" alt="tasks-image">
+            <p>Tasks</p>
+        </div>
+        <div id="tasks-section-part" class="selectSection">
+            <img src="./images/section-images/book.png" alt="book-image">
+            <p>Books</p>
+        </div>
+        <div id="tasks-section-part" class="selectSection">
+            <img src="./images/section-images/cloudy.png" alt="weather-image">
+            <p>Weather</p>
+        </div>
+        <div id="books-section-part" class="selectSection"></div>
+        <div id="arrowDiv">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <!--End of the sections elevator-->
+    <script src="./javascript/javascript.js"></script>
 </body>
 </html>
