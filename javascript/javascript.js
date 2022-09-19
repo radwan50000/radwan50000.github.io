@@ -315,7 +315,6 @@ function getApi (lon,lat){
         }
     }).then(
         (res) =>{
-            console.log(res);
             let image = document.getElementById("weather-sky-image");
                 skyCurrentDegree = document.getElementById("weatherDegree"),
                 skyDescrip = document.getElementById("skyDescrip"),
@@ -327,8 +326,8 @@ function getApi (lon,lat){
             let convertDegree =  (degree) => degree - 273.15;
             humidity.innerHTML = `Humidty: ${res.main.humidity}%`;
             skyDescrip.innerHTML = `Weather Condition: ${res.weather[0].description}`;
-            maxTemp.innerHTML = `Max Tempreature: ${Math.floor(convertDegree(res.main.temp_max))}`;
-            minTemp.innerHTML = `Min Tempreature: ${Math.floor(convertDegree(res.main.temp_min))}`;
+            maxTemp.innerHTML = `Max Tempreature: ${convertDegree(res.main.temp_max).toFixed(1)}`;
+            minTemp.innerHTML = `Min Tempreature: ${convertDegree(res.main.temp_min).toFixed(1)}`;
             state.innerHTML = `State: ${res.name}`;
             country.innerHTML = `Country: ${res.sys.country}`;
             skyCurrentDegree.innerHTML = Math.floor(convertDegree(res.main.temp)) + `°`;
