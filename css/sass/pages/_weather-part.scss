@@ -3,7 +3,7 @@
 @use '../layout/var.scss' as *;
 
 #weatherSectionTitle{
-    @include sectionTitle('Weather Section');
+    @include sectionTitle('Weather Section','../../../images/section-split-image/weather (1).jpg');
 }
 
 #weatherDivContainer{

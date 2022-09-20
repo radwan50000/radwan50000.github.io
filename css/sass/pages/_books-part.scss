@@ -8,7 +8,7 @@
 
 
 #bookSectionTitle{
-    @include sectionTitle('Books Section')
+    @include sectionTitle('Books Section','../../../images/section-split-image/books (2).jpg');
 }
 
 #books-space-container {

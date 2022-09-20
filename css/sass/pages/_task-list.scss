@@ -6,7 +6,7 @@
 
 
 #tasksSectionTitle{
-    @include sectionTitle('Tasks Section');
+    @include sectionTitle('Tasks Section','../../../images/section-split-image/taasks.jpg');
 }
 
 #tasks-container {
