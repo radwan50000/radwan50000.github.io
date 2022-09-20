@@ -315,6 +315,7 @@ function getApi (lon,lat){
         }
     }).then(
         (res) =>{
+            console.log(res);
             let image = document.getElementById("weather-sky-image");
                 skyCurrentDegree = document.getElementById("weatherDegree"),
                 skyDescrip = document.getElementById("skyDescrip"),
