@@ -1,151 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="./images/skills.ico">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life</title>
+    <title>Non Collison Balls</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .score{
+            position: absolute;
+            z-index: 1;
+            padding: 15px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #score1{
+            top: 70px;
+            left: 70px;
+        }
+        #score2{
+            top: 70px;
+            right: 70px;
+        }
+    </style>
 </head>
 <body>
-    <header></header>
-    <!--End of The Header-->
-    <section id="skills">
-        <div id="skills-container">
-            <div id="skills-header">
-                <img src="./images/skills.png" alt="skills">
-                <h1>skills</h1>
-            </div>
-            <div id="skills-image-container">
-                <div class="skill-box">
-                    <img src="./images/code images/html-5.png" alt="HTML">
-                    <h4>HTML</h4>
-                </div>
-                <div class="skill-box">
-                    <img src="./images/code images/css-3.png" alt="CSS">
-                    <h4>CSS</h4>
-                </div>
-                <div class="skill-box">
-                    <img src="./images/code images/js.png" alt="JavaScript">
-                    <h4>JavaScript</h4>
-                </div>
-                <div class="skill-box">
-                    <img src="./images/code images/sass.png" alt="SASS">
-                    <h4>SASS</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End of skills part-->
-    <!--the sections title-->
-    <div id="tasksSectionTitle">
-        <div></div>
-    </div>
-    <!--Start of Tasks List-->
-    <section id="tasks">
-        <div id="tasks-container">
-            <div id="tasks-box">
-                <input type="text" placeholder="New Task" id="input-new-task">
-                <div id="button-div">
-                    <div id="submit-task-button">ADD TASK</div>
-                </div>
-                <hr>
-                <div id="lists-container">
-                    <input type="text" placeholder="Filter Tasks" id="filter-tasks">
-                </div>
-                <div id="clear-tasks-div">
-                    <div id="clear-tasks-button">
-                        Clear Tasks
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End of Tasks List-->
-    <!--Start of Books part-->
-    <!--the sections title-->
-    <div id="bookSectionTitle">
-        <div></div>
-    </div>
-    <section id="books">
-        <div id="books-space-container">
-            <div id="books-container">
-                <div id="input-book-title-container" class="inputs-container">
-                    <input type="text" class="books-input-text" id="input-book-title">
-                </div>
-                <div id="input-book-author-container" class="inputs-container">
-                    <input type="text" class="books-input-text" id="input-book-author">
-                </div>
-                <div id="input-book-isbn-container" class="inputs-container">
-                    <input type="text" class="books-input-text" id="input-book-isbn">
-                </div>
-                <div id="submit-book-data-button">submit</div>
-                <div id="books-list">
-                    <div class="books-details-container">
-                        <span class="book-detail">Title</span>
-                        <span class="book-detail">Author</span>
-                        <span class="book-detail">ISBN</span>
-                        <span class="book-detail"></span>
-                    </div>
-                </div>
-                <div id="remove-books-div">
-                    <div id="remove-books-button">
-                        Clear Books
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End of Books part-->
-    <!--Start of the Weather Part-->
-    <div id="weatherSectionTitle">
-        <div></div>
-    </div>
-    <section id="weather">
-        <div id="weatherDivContainer">
-            <div id="weatherDiv">
-                <div id="showWeatherDegree">
-                    <p id="weatherDegree"></p>
-                    <img src="#" alt="Weather State image" id="weather-sky-image">
-                </div>
-                <div id="weatherDetails">
-                    <div id="skyDescrip">Weather Condition: </div>
-                    <div id="humidity">Humidty: </div>
-                    <div id="maxTemp">Max Temperature: </div>
-                    <div id="minTemp">Min Temperature: </div>
-                    <div id="state">State: </div>
-                    <div id="country">Country: </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End of the Weather Part-->
-    <!--Start of the sections elevator-->
-    <div id="sectionsElevator">
-        <div id="top-section-part" class="selectSection">
-            <img src="./images/section-images/top.png" alt="top-image">
-            <p>Top</p>
-        </div>
-        <div id="tasks-section-part" class="selectSection">
-            <img src="./images/section-images/task.png" alt="tasks-image">
-            <p>Tasks</p>
-        </div>
-        <div id="tasks-section-part" class="selectSection">
-            <img src="./images/section-images/book.png" alt="book-image">
-            <p>Books</p>
-        </div>
-        <div id="tasks-section-part" class="selectSection">
-            <img src="./images/section-images/cloudy.png" alt="weather-image">
-            <p>Weather</p>
-        </div>
-        <div id="books-section-part" class="selectSection"></div>
-        <div id="arrowDiv">
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
-    </div>
-    <!--End of the sections elevator-->
-    <script src="./javascript/javascript.js"></script>
+    <canvas id="canvas"></canvas>
+    <div id="score1" class="score">0</div>
+    <div id="score2" class="score">0</div>
+    <script src="./canavs.js"></script>
 </body>
 </html>
