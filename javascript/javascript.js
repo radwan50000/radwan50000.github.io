@@ -26,7 +26,7 @@ function correctData(innerData, defaultData) {
 function getData(apiLink) {
     return new Promise((resolve, reject) => {
         let api = new XMLHttpRequest();
-        api.open('GET', apiLink, true);
+        api.open('GET', apiLink,true);
         api.send();
         api.addEventListener("load", function () {
             if (this.readyState === 4 && this.status === 200) {
@@ -82,7 +82,7 @@ text.addEventListener("keydown", function (event) {
 
 submitButton.addEventListener("click", function () {
     text = document.getElementById("searchInput").value.trim();
-    let apiLink = `http://www.omdbapi.com/?t=${text}&apikey=d2322989`;
+    let apiLink = `https://www.omdbapi.com/?t=${text}&apikey=d2322989`;
     getData(apiLink);
 });
 
