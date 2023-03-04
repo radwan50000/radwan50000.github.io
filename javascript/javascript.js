@@ -15,10 +15,10 @@ let submitButton = document.getElementById("submitButton"),
 
 
 function correctData(innerData, defaultData) {
-    if (innerData !== 'N/A') {
+    if (innerData.toLowerCase() != 'n/a') {
         return innerData;
-    } else {
-        defaultData;
+    }else {
+        return defaultData;
     }
 }
 
@@ -41,7 +41,6 @@ function getData(apiLink) {
             console.log(res);
             data = res;
             if (data.Error === undefined) {
-                let color;
                 firstMovieShow.style.display = 'none';
                 notFoundImage.style.display = 'none';
                 movieDetailDiv.style.display = 'flex';
@@ -62,7 +61,7 @@ function getData(apiLink) {
                 moiveRate.innerHTML = `imdb Rating: ${correctData(data.imdbRating, "????")}⭐`;
                 document.getElementById("pageBackgroundLayout").style.cssText = 'width: 100%;height: 80%;';
                 document.getElementById("pageBackgroundLayout").style.cssText = 'width: 100%;height: 100%;';
-                document.getElementById("movieShow").style.backgroundColor = color
+                
 
             } else {
                 firstMovieShow.style.display = 'none';
