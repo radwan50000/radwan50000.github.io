@@ -40,9 +40,7 @@ langButton.addEventListener("click",function(){
         submit_button.textContent = "Submit";
         header_3.textContent = "Please enter the following data for your information";
         header_5.innerHTML = "We wish you all the best in your exams. Please do not <br>share information with others";
-
     }
-
 });
 
 
