@@ -19,7 +19,7 @@ langButton.addEventListener("click",function(){
         selectedLangBox.textContent = "ع";
         header_1.textContent = "ادخل الرقم القومي او الكود الجامعي";
         header_3.textContent = "يرجى إدخال البيانات التالية للحصول على معلوماتك";
-        header_5.innerHTML = "نتمنى لك كل التوفيق في اختباراتك، يرحى عدم<br> تبادل المعلومات مع الغير ";
+        header_5.innerHTML = "نتمنى لك كل التوفيق في اختباراتك، يرجى عدم<br> تبادل المعلومات مع الغير ";
         national_id.textContent = "الرقم القومي";
         email_id.textContent = "الكود";
         input_field.placeholder = "ادخل البيانات...";
