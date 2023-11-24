@@ -17,7 +17,7 @@ langButton.addEventListener("click",function(){
         console.log('test');
         selectedLangBox.style.cssText = "position: absolute;top: 0;right: 0 !important;";
         selectedLangBox.textContent = "ع";
-        header_1.textContent = "ادخل الرقم القومي او الايميل";
+        header_1.textContent = "ادخل الرقم القومي او الكود الجامعي";
         header_3.textContent = "يرجى إدخال البيانات التالية للحصول على معلوماتك";
         header_5.innerHTML = "نتمنى لك كل التوفيق في اختباراتك، يرحى عدم<br> تبادل المعلومات مع الغير ";
         national_id.textContent = "الرقم القومي";
@@ -26,7 +26,7 @@ langButton.addEventListener("click",function(){
         for(let i=0;i<radio_div.length;i++){
             radio_div[i].style.cssText = "direction: rtl";
         }
-        submit_button.textContent = "تأكيد";
+        submit_button.textContent = "استعلام";
     }else{
         selectedLangBox.style.cssText = "position: absolute;top: 0;left: 0 !important;";
         selectedLangBox.textContent = "En";
