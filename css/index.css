@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0px;
 }
 
@@ -16,22 +17,40 @@ header.header {
   background-color: #F6F6F6;
   width: 100%;
   height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header.header div#headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
   margin: 0px 10%;
 }
 header.header div#headerContainer #image-logo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header.header div#headerContainer #image-logo-header img.header-logo {
   width: 4rem;
@@ -44,14 +63,22 @@ header.header div#headerContainer div#lang-select {
   position: relative;
   width: 5.875rem;
   height: 1.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-weight: 500;
   height: 3rem;
   background-color: rgba(162, 162, 162, 0.4);
   border-radius: 1.0625rem;
   overflow: hidden;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
@@ -63,18 +90,34 @@ header.header div#headerContainer div#lang-select #selected-lang-box {
   border-radius: 20%;
   padding: 1rem;
   background-color: #039BE5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
+  -webkit-transition: inherit;
   transition: inherit;
 }
 
 main div#E-D-H-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: auto;
   padding: 4rem 0px 1rem 0px;
@@ -90,9 +133,16 @@ main div#E-D-H-container h3#E-D-H-3 {
   color: black;
 }
 main form div#radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 30px auto;
@@ -101,11 +151,18 @@ main form div#radio-container div.radio-div {
   padding: 0px 10px;
   direction: ltr;
   font-size: 14px;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
 }
 main form div#radio-container div.radio-div input[type=radio] {
@@ -113,9 +170,15 @@ main form div#radio-container div.radio-div input[type=radio] {
   cursor: pointer;
 }
 main form div#input-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: auto;
 }
@@ -135,10 +198,17 @@ main form div#input-text-container input[type=text]:focus {
   font-family: "Alexandria", sans-serif;
 }
 main form #submit-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 3rem auto;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: transparent;
@@ -155,6 +225,7 @@ main form #submit-button-container #submit-button {
   cursor: pointer;
   background-color: rgb(116, 185, 255);
   color: white;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 main form #submit-button-container #submit-button:hover {
@@ -165,11 +236,18 @@ main form #submit-button-container #submit-button:hover {
 h5#E-D-H-5 {
   line-height: 1.3rem;
   margin: 0px auto;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -178,7 +256,8 @@ img#background-logo {
   z-index: -999;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0.2;
   width: 30rem;
 }
@@ -203,4 +282,4 @@ img#background-logo {
   #submit-button:hover {
     width: 20rem !important;
   }
-}/*# sourceMappingURL=main.css.map */
+}
