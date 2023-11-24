@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/css/all.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Movies Info</title>
-    </head>
-    <body>
-        <div id="pageContainer">
-            <header id="navigator">
-                <img src="./images/video.gif" id="nav-image">
-                <span>
-                    <input type="text" placeholder="Search" id="searchInput">
-                    <button id="submitButton">search</button>
-                </span>
-            </header>
-            <section id="moviePart">
-                <div id="pageBackgroundLayout"></div>
-                <div id="movieShow">
-                    <div id="searchForMovie">
-                        <h1>Search For Movie</h1>
-                        <img src="./images/seo.png" alt="find-out">
-                    </div>
-                    <div  id="not-found-image" style="display: none;">
-                        <img src="./images/not-found-image.png" alt="not-found">
-                    </div>
-                    <div id="movieDetail" style="display: none;">
-                        <img src="" alt="" id="moviePoster">
-                        <ul>
-                            <li id="movieName" class="movie-detail-text-style">Movie Title: ????</li>
-                            <li id="movieYear" class="movie-detail-text-style">Year: ????</li>
-                            <li id="movieActors" class="movie-detail-text-style">Actors: ????</li>
-                            <li id="movieAwards" class="movie-detail-text-style">Trophies: ????</li>
-                            <li id="movieRunTime" class="movie-detail-text-style">Run Time: ????</li>
-                            <li id="moviePlot" class="movie-detail-text-style">Plot: ????</li>
-                            <li id="movieLanguage" class="movie-detail-text-style">Language: ????</li>
-                            <li id="movieRate" class="movie-detail-text-style">imdb Rate: ????⭐</li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </section>
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="icon" href="./images/image.ico">
+</head>
+<body>
+    <header class="header">
+        <div id="headerContainer">
+            <div id="image-logo-header">
+                <img src="./images/image.png" alt="institute logo" class="header-logo" id="header-institute-logo">
+                <img src="./images/ministry.png" alt="ministry logo" class="header-logo" id="header-ministry-logo">
+            </div>
+            <div id="lang-select" class="ar-lang">
+                <div id="selected-lang-box" >En</div>
+            </div>
         </div>
-        
-        <script src="./javascript/javascript.js"></script>
-    </body>
+    </header>
+
+    <main>
+        <!--E => enter | D => data | h => header-->
+        <div id="E-D-H-container">
+            <h1 id="E-D-H-1">
+                Enter National ID or Email
+            </h1>
+            <h3 id="E-D-H-3">
+                Please enter the following data for your information
+            </h3>
+        </div>
+        <form action="">
+            <div id="radio-container">
+                <div id="n-id-radio-div" class="radio-div">
+                    <input type="radio" name="get-data-type" id="radio-national-id" value="national-id">
+                    <p id="national-id-text">National ID</p>
+                </div>
+                <div id="e-id-radio-div" class="radio-div">
+                    <input type="radio" name="get-data-type" id="radio-email-id" value="email" checked>
+                    <p id="email-id-text">Code</p>
+                </div>
+            </div>
+            <div id="input-text-container">
+                <input type="text" id="input-field" placeholder="Enter Data...">
+            </div>
+            <div id="submit-button-container">
+                <button id="submit-button" disabled>
+                    Submit
+                </button>
+            </div>
+        </form>
+    </main>
+    <h5 id="E-D-H-5">
+        We wish you all the best in your exams. Please do not <br> share information with others
+    </h5>
+    <!-- <img src="./images/image.png" id="background-logo"> -->
+    <script src="./javascript/index.js"></script>
+</body>
 </html>

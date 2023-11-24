@@ -1,3 +1,221 @@
-@import './SASS/default/pageDefault';
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@import './SASS/pages/pageOne';
+
+//declaring variables
+$background_body_color: #FFF;
+$background_lang_color: rgb(116, 185, 255);
+$color_dark_cyan: #80A0F0;
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body {
+    background-color: $background_body_color;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Alexandria', sans-serif;
+}
+
+header.header {
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    & div#headerContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0px 10%;
+
+        #image-logo-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            & img.header-logo {
+                width: 4rem;
+            }
+
+            & img#header-ministry-logo {
+                width: 8.5625rem;
+                height: 5.58819rem;
+            }
+        }
+
+        & div#lang-select {
+            position: relative;
+            width: 5.875rem;
+            height: 1.5625rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-weight: 500;
+            height: 3rem;
+            background-color: #A2A2A266;
+            border-radius: 1.0625rem;
+            overflow: hidden;
+            transition: .4s ease-in-out;
+            cursor: pointer;
+
+            & #selected-lang-box {
+                position: absolute;
+                top: 0%;
+                //left: 0%;
+                width: 50%;
+                height: 100%;
+                border-radius: 20%;
+                padding: 1rem;
+                background-color: #039BE5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                transition: inherit;
+            }
+
+
+        }
+
+    }
+
+}
+
+main {
+    & div#E-D-H-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 4rem 0px 1rem 0px;
+        text-align: center;
+
+        & h1#E-D-H-1 {
+            font-size: 2rem;
+            color: black;
+            margin-bottom: 2rem;
+        }
+
+        & h3#E-D-H-3 {
+            font-size: 0.7rem;
+            color: black;
+
+        }
+    }
+
+    & form {
+        & div#radio-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: fit-content;
+            margin: 30px auto;
+
+            & div.radio-div {
+                padding: 0px 10px;
+                direction: ltr;
+                font-size: 14px;
+                width: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 500;
+
+                & input[type="radio"] {
+                    margin: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        & div#input-text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+
+            & input[type="text"] {
+                outline: none;
+                width: 30rem;
+                height: 5rem;
+                background: rgba(221, 214, 214, 0.50);
+                border-radius: 10px;
+                border: none;
+                padding: 0px 5px 0px 15px;
+                font-size: 20px;
+                font-family: 'Alexandria', sans-serif;
+                text-align: center;
+
+                &:focus{
+                    font-family: 'Alexandria', sans-serif;
+                }
+            }
+        }
+
+        & #submit-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem auto;
+            width: fit-content;
+            background-color: transparent;
+            border-radius: 20px;
+
+            & #submit-button {
+                position: relative;
+                outline: none;
+                font-size: 25px;
+                width: 15rem;
+                padding: 1rem 5rem;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: $background_lang_color;
+                color: white;
+                transition: .3s;
+
+
+                &:hover {
+                    background-color: $color_dark_cyan;
+                    width: 30rem;
+                }
+            }
+        }
+    }
+}
+
+h5#E-D-H-5 {
+    line-height: 1.3rem;
+    margin: 0px auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+img#background-logo {
+    position: absolute;
+    z-index: -999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    width: 30rem;
+}
+
+@import '../css/pages/phone';
