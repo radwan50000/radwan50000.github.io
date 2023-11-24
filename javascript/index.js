@@ -30,7 +30,7 @@ langButton.addEventListener("click",function(){
     }else{
         selectedLangBox.style.cssText = "position: absolute;top: 0;left: 0 !important;";
         selectedLangBox.textContent = "En";
-        header_1.textContent = "Enter National ID or Email";
+        header_1.textContent = "Enter National ID or Code";
         national_id.textContent = "National ID";
         email_id.textContent = "Code";
         input_field.placeholder = "Enter Data...";
