@@ -20,5 +20,24 @@
 
     #submit-button{
         width: calc($input_number_width * 0.8) !important;
+        font-size: 20px;
+    }
+
+    div#student_details_container{
+        width: $input_number_width !important;
+        
+        & p{
+            font-size: 0.8rem;
+            margin: 0.4rem 0px;
+        }
+
+        & div.student-details{
+            width: $input_number_width !important;
+            font-size: 0.8rem;
+        }
+    }
+
+    h5#E-D-H-5{
+        font-size: small;
     }
 }

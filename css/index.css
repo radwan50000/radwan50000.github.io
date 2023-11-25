@@ -48,6 +48,7 @@ header.header div#headerContainer div#lang-select {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
   font-weight: 500;
   height: 3rem;
   background-color: rgba(162, 162, 162, 0.4);
@@ -56,9 +57,13 @@ header.header div#headerContainer div#lang-select {
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
+header.header div#headerContainer div#lang-select::-moz-selection {
+  background-color: none;
+}
+header.header div#headerContainer div#lang-select::selection {
+  background-color: none;
+}
 header.header div#headerContainer div#lang-select #selected-lang-box {
-  position: absolute;
-  top: 0%;
   width: 50%;
   height: 100%;
   border-radius: 20%;
@@ -68,7 +73,13 @@ header.header div#headerContainer div#lang-select #selected-lang-box {
   justify-content: center;
   align-items: center;
   color: white;
-  transition: inherit;
+  transition: 0.3s ease-in-out;
+}
+header.header div#headerContainer div#lang-select #selected-lang-box::-moz-selection {
+  background-color: none;
+}
+header.header div#headerContainer div#lang-select #selected-lang-box::selection {
+  background-color: none;
 }
 
 main {
@@ -155,7 +166,7 @@ main #submit-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.5rem auto 3rem auto;
+  margin: 1.5rem auto 2rem auto;
   width: -moz-fit-content;
   width: fit-content;
   background-color: transparent;
@@ -164,15 +175,42 @@ main #submit-button-container {
 main #submit-button-container #submit-button {
   position: relative;
   outline: none;
-  font-size: 25px;
+  font-size: 23px;
   width: 24rem;
   padding: 1rem 5rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background-color: rgb(141, 188, 234);
+  background-color: rgb(116, 185, 255);
   color: white;
   transition: 0.3s;
+  font-family: "Alexandria", sans-serif;
+}
+main div#student_details_container {
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 30rem;
+  margin: 0px auto 2rem auto;
+  overflow: hidden;
+}
+main div#student_details_container p.student-details-p {
+  font-family: "Alexandria", sans-serif;
+  font-size: 1.2rem;
+  margin: 0.3rem 0px;
+}
+main div#student_details_container div.student-details {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: rgba(221, 214, 214, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 0.8rem 0px 0.6rem;
+  flex-wrap: wrap;
 }
 
 h5#E-D-H-5 {
@@ -186,17 +224,10 @@ h5#E-D-H-5 {
   text-align: center;
 }
 
-img#background-logo {
-  position: absolute;
-  z-index: -999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.2;
-  width: 30rem;
-}
-
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,7 +235,6 @@ footer {
   margin: 3rem 0px 0px 0px;
   height: 4rem;
   width: 100vw;
-  overflow-y: hidden;
 }
 
 @media screen and (max-width: 600px) {
@@ -223,6 +253,21 @@ footer {
   }
   #submit-button {
     width: 16rem !important;
+    font-size: 20px;
+  }
+  div#student_details_container {
+    width: 20rem !important;
+  }
+  div#student_details_container p {
+    font-size: 0.8rem;
+    margin: 0.4rem 0px;
+  }
+  div#student_details_container div.student-details {
+    width: 20rem !important;
+    font-size: 0.8rem;
+  }
+  h5#E-D-H-5 {
+    font-size: small;
   }
 }
 @keyframes En_to_Ar_main {
