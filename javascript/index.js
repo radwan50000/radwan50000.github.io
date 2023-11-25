@@ -23,34 +23,8 @@ let langButton = document.querySelector("#lang-select"),
     lang = "en";
 
 
-const sussesBtn = (msg) => {
-    Toastify({
-        text: msg,
-        duration: 3000,
-        newWindow: true,
-        close: true,
-        gravity: 'top',
-        positionLeft: false,
-        avatar: './../images/successLogo.png',
-        backgroundColor: '#50ac54',
-    }).showToast();
-};
-
-const failedBtn = (msg) => {
-    Toastify({
-        text: msg,
-        duration: 3000,
-        newWindow: true,
-        close: true,
-        gravity: 'top',
-        positionLeft: false,
-        avatar: './../images/failedLogo.png',
-        backgroundColor: '#e81c24',
-    }).showToast();
-};
 
 function changeLanguage(){
-
     if(!english){
         main.style.cssText = "animation: Ar_to_En_main 0.6s ease-in-out forwards !important;";
         header_5.style.cssText = "animation: Ar_to_En_main 0.6s ease-in-out forwards !important;";
@@ -63,7 +37,7 @@ function changeLanguage(){
         seat_num_p.textContent = 'رقم الجلوس';
         board_floor_p.textContent = 'رقم الدور';
         board_num_p.textContent = 'رقم اللجنة';
-        student_details_container.style.cssText = "align-items: flex-end;";
+        student_details_container.style.cssText +="align-items: flex-end !important;";
         for(let i=0;i<document.querySelectorAll(".student-details").length;i++){
             document.querySelectorAll(".student-details")[i].style.cssText = "justify-content: right;align-items: center;";
         }
@@ -87,7 +61,7 @@ function changeLanguage(){
         seat_num_p.textContent = 'Seat Number';
         board_floor_p.textContent = 'Board Floor';
         board_num_p.textContent = 'Board Number';
-        student_details_container.style.cssText += "justify-content: center !important;align-items: flex-start !important;";
+        student_details_container.style.cssText += "align-items: flex-start !important;";
         for(let i=0;i<document.querySelectorAll(".student-details").length;i++){
             document.querySelectorAll(".student-details")[i].style.cssText = "justify-content: left;align-items: center;";
         }
