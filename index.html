@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./css/index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project</title>
-    <link rel="icon" href="./images/image.ico">
-</head>
-<body>
-    <header class="header">
-        <div id="headerContainer">
-            <div id="image-logo-header">
-                <img src="./images/image.png" alt="institute logo" class="header-logo" id="header-institute-logo">
-                <img src="./images/ministry.png" alt="ministry logo" class="header-logo" id="header-ministry-logo">
+    <head>
+        <link rel="stylesheet" href="./css/index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>project</title>
+        <link rel="icon" href="./images/image.ico">
+    </head>
+    <body>
+        <header class="header">
+            <div id="headerContainer">
+                <div id="image-logo-header">
+                    <img src="./images/image.png" alt="institute logo"
+                        class="header-logo" id="header-institute-logo">
+                    <img src="./images/ministry.png" alt="ministry logo"
+                        class="header-logo" id="header-ministry-logo">
+                </div>
+                <div id="lang-select" class="ar-lang">
+                    <div id="selected-lang-box">En</div>
+                </div>
             </div>
-            <div id="lang-select" class="ar-lang">
-                <div id="selected-lang-box" >En</div>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <!--E => enter | D => data | h => header-->
-        <div id="E-D-H-container">
-            <h1 id="E-D-H-1">
-                Enter National ID or Code
-            </h1>
-            <h3 id="E-D-H-3">
-                Please enter the following data for your information
-            </h3>
-        </div>
-        <form action="">
-            <div id="radio-container">
-                <div id="n-id-radio-div" class="radio-div">
-                    <input type="radio" name="get-data-type" id="radio-national-id" value="national-id">
-                    <p id="national-id-text">National ID</p>
+        <main>
+            <!--E => enter | D => data | h => header-->
+            <div id="E-D-H-container">
+                <h1 id="E-D-H-1">
+                    Enter National ID or Student ID
+                </h1>
+                <h3 id="E-D-H-3">
+                    Please enter the following data for your information
+                </h3>
+            </div>
+            <form action>
+                <div id="radio-container">
+                    <div id="n-id-radio-div" class="radio-div">
+                        <input type="radio" value="national-id"
+                            name="get-data-type" id="radio-national-id"
+                            value="national-id">
+                        <label id="national-id-text" for="radio-national-id">National
+                            ID</label>
+                    </div>
+                    <div id="e-id-radio-div" class="radio-div">
+                        <input type="radio" value="student-id"
+                            name="get-data-type" id="radio-email-id"
+                            value="email" checked>
+                        <label id="email-id-text" for="radio-email-id">Student
+                            ID</label>
+                    </div>
                 </div>
-                <div id="e-id-radio-div" class="radio-div">
-                    <input type="radio" name="get-data-type" id="radio-email-id" value="email" checked>
-                    <p id="email-id-text">Code</p>
+                <div id="input-number-container">
+                    <input type="number" min="0" id="input-field"
+                        placeholder="Enter Data...">
                 </div>
-            </div>
-            <div id="input-text-container">
-                <input type="text" id="input-field" placeholder="Enter Data...">
-            </div>
-            <div id="submit-button-container">
-                <button id="submit-button" disabled>
-                    Submit
-                </button>
-            </div>
-        </form>
-    </main>
-    <h5 id="E-D-H-5">
-        We wish you all the best in your exams. Please do not <br> share information with others
-    </h5>
-    <script src="./javascript/index.js"></script>
-</body>
+                <div id="submit-button-container">
+                    <button id="submit-button" disabled>
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </main>
+        <h5 id="E-D-H-5">
+            We wish you all the best in your exams. Please do not <br> share
+            information with others
+        </h5>
+        <footer>
+            <p>
+                By MIS Team
+            </p>
+        </footer>
+        <script src="./javascript/index.js"></script>
+    </body>
 </html>

@@ -11,6 +11,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Alexandria", sans-serif;
+  overflow-x: hidden;
 }
 
 header.header {
@@ -104,6 +105,10 @@ header.header div#headerContainer div#lang-select #selected-lang-box {
   transition: inherit;
 }
 
+main {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 main div#E-D-H-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +132,8 @@ main div#E-D-H-container h1#E-D-H-1 {
   font-size: 2rem;
   color: black;
   margin-bottom: 2rem;
+  -webkit-transition: inherit;
+  transition: inherit;
 }
 main div#E-D-H-container h3#E-D-H-3 {
   font-size: 0.7rem;
@@ -169,7 +176,10 @@ main form div#radio-container div.radio-div input[type=radio] {
   margin: 4px;
   cursor: pointer;
 }
-main form div#input-text-container {
+main form div#radio-container div.radio-div label {
+  cursor: pointer;
+}
+main form div#input-number-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,8 +191,17 @@ main form div#input-text-container {
           align-items: center;
   width: 100%;
   height: auto;
+  /* Firefox */
 }
-main form div#input-text-container input[type=text] {
+main form div#input-number-container input::-webkit-outer-spin-button,
+main form div#input-number-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main form div#input-number-container input[type=number] {
+  -moz-appearance: textfield;
+}
+main form div#input-number-container input[type=number] {
   outline: none;
   width: 30rem;
   height: 5rem;
@@ -194,7 +213,7 @@ main form div#input-text-container input[type=text] {
   font-family: "Alexandria", sans-serif;
   text-align: center;
 }
-main form div#input-text-container input[type=text]:focus {
+main form div#input-number-container input[type=number]:focus {
   font-family: "Alexandria", sans-serif;
 }
 main form #submit-button-container {
@@ -207,7 +226,7 @@ main form #submit-button-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3rem auto;
+  margin: 1.5rem auto 3rem auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -218,7 +237,7 @@ main form #submit-button-container #submit-button {
   position: relative;
   outline: none;
   font-size: 25px;
-  width: 15rem;
+  width: 30rem;
   padding: 1rem 5rem;
   border: none;
   border-radius: 10px;
@@ -227,10 +246,6 @@ main form #submit-button-container #submit-button {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-main form #submit-button-container #submit-button:hover {
-  background-color: #80A0F0;
-  width: 30rem;
 }
 
 h5#E-D-H-5 {
@@ -262,6 +277,23 @@ img#background-logo {
   width: 30rem;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  margin: 3rem 0px 0px 0px;
+  height: 4rem;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
 @media screen and (max-width: 600px) {
   #header-logo {
     width: 4rem !important;
@@ -272,14 +304,11 @@ img#background-logo {
   .radio-div {
     font-size: 1.2rem !important;
   }
-  #input-text-container input[type=text] {
+  #input-number-container input[type=number] {
     width: 20rem !important;
     height: 4.2rem !important;
   }
   #submit-button {
-    font-size: 1rem !important;
-  }
-  #submit-button:hover {
     width: 20rem !important;
   }
 }

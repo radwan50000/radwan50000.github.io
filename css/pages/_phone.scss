@@ -12,16 +12,12 @@
         font-size: 1.2rem !important;
     }
 
-    #input-text-container input[type="text"]{
+    #input-number-container input[type="number"]{
         width: 20rem !important;
         height: 4.2rem !important;
     }
 
     #submit-button{
-        font-size: 1rem !important;
-
-        &:hover{
-            width: 20rem !important;
-        }
+        width: 20rem !important;
     }
 }
