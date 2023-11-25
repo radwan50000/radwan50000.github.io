@@ -1,4 +1,5 @@
 @media screen and (max-width: 600px) {
+    $input_number_width: 20rem;
 
     #header-logo{
         width: 4rem !important;
@@ -18,6 +19,6 @@
     }
 
     #submit-button{
-        width: 20rem !important;
+        width: calc($input_number_width * 0.8) !important;
     }
 }

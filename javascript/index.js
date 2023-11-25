@@ -9,6 +9,7 @@ let langButton = document.querySelector("#lang-select"),
     email_id = document.querySelector("#email-id-text"),
     input_field = document.querySelector("#input-field"),
     submit_button = document.querySelector("#submit-button"),
+    main = document.querySelector("main"),
     english = true,
     lang = "en";
 
@@ -40,7 +41,9 @@ const failedBtn = (msg) => {
 };
 
 function changeLanguage(){
+
     if(!english){
+        main.style.cssText = "animation: Ar_to_En_main 1s ease-in-out forwards !important;";
         selectedLangBox.style.cssText = "position: absolute;top: 0;right: 0 !important;";
         selectedLangBox.textContent = "ع";
         header_1.textContent = "ادخل الرقم القومي او الكود الجامعي";
@@ -54,6 +57,8 @@ function changeLanguage(){
         }
         submit_button.textContent = "استعلام";
     }else{
+        main.style.cssText = "animation: En_to_Ar_main 1s ease-in-out forwards !important;";
+
         selectedLangBox.style.cssText = "position: absolute;top: 0;left: 0 !important;";
         selectedLangBox.textContent = "En";
         header_1.textContent = "Enter National ID or Student ID";
@@ -67,6 +72,7 @@ function changeLanguage(){
         header_3.textContent = "Please enter the following data for your information";
         header_5.innerHTML = "We wish you all the best in your exams. Please do not <br>share information with others";
     }
+    
 }
 
 langButton.addEventListener("click",function(){
@@ -82,30 +88,34 @@ function enableSubmitButton() {
     if (input_field.value == '') {
         submit_button.disabled = true;
         submit_button.style.cursor = 'not-allowed';
-        submit_button.style.backgroundColor = '#039be5';
+        submit_button.style.backgroundColor = '#5faacf';
         submit_button.style.color = 'white';
     }
 }
-enableSubmitButton();
 
-input_field.addEventListener("change",function(){
+
+input_field.addEventListener("keyup",function(){
     enableSubmitButton();
 })
 
 
-// async function getStudentData() {
-//     let flag = document.querySelector(
-//         'input[name="get-data-type"]:checked'
-//     ).value;
-//     let id = input_field.value;
-//     const response = await fetch(
-//         `https://eia-seat-number.onrender.com/api/v1/students/getSeatNumber/${flag}/${id}`
-//     );
-//     const studentSeatNumber = await response.json();
-//     console.log(studentSeatNumber);
-//     //showData(studentSeatNumber);
-// }
 
-// submit_button.addEventListener("click",function(){
-//     getStudentData();
-// })
+async function getStudentData() {
+    let flag = document.querySelector(
+        'input[name="get-data-type"]:checked'
+    ).value;
+    let id = input_field.value;
+    const response = await fetch(
+        `https://eia-seat-number.onrender.com/api/v1/students/getSeatNumber/${flag}/${id}`
+    );
+    const studentSeatNumber = await response.json();
+    console.log(studentSeatNumber.seatNumber.seatNumber);
+    //showData(studentSeatNumber);
+}
+submit_button.addEventListener("click",function(){
+    getStudentData();
+})
+
+
+
+enableSubmitButton();

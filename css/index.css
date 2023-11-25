@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0px;
 }
 
@@ -18,40 +17,22 @@ header.header {
   background-color: #F6F6F6;
   width: 100%;
   height: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 header.header div#headerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 100%;
   margin: 0px 10%;
 }
 header.header div#headerContainer #image-logo-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 header.header div#headerContainer #image-logo-header img.header-logo {
   width: 4rem;
@@ -64,22 +45,14 @@ header.header div#headerContainer div#lang-select {
   position: relative;
   width: 5.875rem;
   height: 1.5625rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   font-weight: 500;
   height: 3rem;
   background-color: rgba(162, 162, 162, 0.4);
   border-radius: 1.0625rem;
   overflow: hidden;
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   cursor: pointer;
 }
@@ -91,38 +64,21 @@ header.header div#headerContainer div#lang-select #selected-lang-box {
   border-radius: 20%;
   padding: 1rem;
   background-color: #039BE5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: white;
-  -webkit-transition: inherit;
   transition: inherit;
 }
 
 main {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  transition: opacity 0.5s ease-in-out;
 }
 main div#E-D-H-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
   padding: 4rem 0px 1rem 0px;
@@ -132,76 +88,55 @@ main div#E-D-H-container h1#E-D-H-1 {
   font-size: 2rem;
   color: black;
   margin-bottom: 2rem;
-  -webkit-transition: inherit;
   transition: inherit;
 }
 main div#E-D-H-container h3#E-D-H-3 {
   font-size: 0.7rem;
   color: black;
 }
-main form div#radio-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+main div#radio-container {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: -webkit-fit-content;
+  justify-content: space-between;
+  align-items: center;
   width: -moz-fit-content;
   width: fit-content;
   margin: 30px auto;
 }
-main form div#radio-container div.radio-div {
+main div#radio-container div.radio-div {
   padding: 0px 10px;
   direction: ltr;
   font-size: 14px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
 }
-main form div#radio-container div.radio-div input[type=radio] {
+main div#radio-container div.radio-div input[type=radio] {
   margin: 4px;
   cursor: pointer;
 }
-main form div#radio-container div.radio-div label {
+main div#radio-container div.radio-div label {
   cursor: pointer;
 }
-main form div#input-number-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+main div#input-number-container {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   /* Firefox */
 }
-main form div#input-number-container input::-webkit-outer-spin-button,
-main form div#input-number-container input::-webkit-inner-spin-button {
+main div#input-number-container input::-webkit-outer-spin-button,
+main div#input-number-container input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-main form div#input-number-container input[type=number] {
+main div#input-number-container input[type=number] {
   -moz-appearance: textfield;
 }
-main form div#input-number-container input[type=number] {
+main div#input-number-container input[type=number] {
   outline: none;
   width: 30rem;
   height: 5rem;
@@ -213,56 +148,41 @@ main form div#input-number-container input[type=number] {
   font-family: "Alexandria", sans-serif;
   text-align: center;
 }
-main form div#input-number-container input[type=number]:focus {
+main div#input-number-container input[type=number]:focus {
   font-family: "Alexandria", sans-serif;
 }
-main form #submit-button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+main #submit-button-container {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 1.5rem auto 3rem auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: transparent;
   border-radius: 20px;
 }
-main form #submit-button-container #submit-button {
+main #submit-button-container #submit-button {
   position: relative;
   outline: none;
   font-size: 25px;
-  width: 30rem;
+  width: 24rem;
   padding: 1rem 5rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  background-color: rgb(116, 185, 255);
+  background-color: rgb(141, 188, 234);
   color: white;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 h5#E-D-H-5 {
   line-height: 1.3rem;
   margin: 0px auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -271,22 +191,15 @@ img#background-logo {
   z-index: -999;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 0.2;
   width: 30rem;
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #F6F6F6;
   margin: 3rem 0px 0px 0px;
   height: 4rem;
@@ -309,6 +222,30 @@ footer {
     height: 4.2rem !important;
   }
   #submit-button {
-    width: 20rem !important;
+    width: 16rem !important;
   }
 }
+@keyframes En_to_Ar_main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Ar_to_En_main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes button_main_animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=index.css.map */
