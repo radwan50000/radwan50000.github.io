@@ -148,6 +148,7 @@ async function showData(input){
     if(input.message === 'success'){
         student_details_container.style.cssText = "display: flex";
         let value = input.seatNumber;
+        console.log(value);
         stu_name.innerHTML = value.name;
         seat_num.innerHTML = value.seatNumber;
         board_floor.innerHTML = value.boardFloor;
