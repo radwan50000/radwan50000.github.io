@@ -63,7 +63,7 @@ function changeLanguage(){
         seat_num_p.textContent = 'رقم الجلوس';
         board_floor_p.textContent = 'رقم الدور';
         board_num_p.textContent = 'رقم اللجنة';
-        student_details_container.style.cssText = "align-items: flex-end;";
+        student_details_container.style.cssText += "align-items: flex-end;";
         for(let i=0;i<document.querySelectorAll(".student-details").length;i++){
             document.querySelectorAll(".student-details")[i].style.cssText = "justify-content: right;align-items: center;";
         }
@@ -87,7 +87,7 @@ function changeLanguage(){
         seat_num_p.textContent = 'Seat Number';
         board_floor_p.textContent = 'Board Floor';
         board_num_p.textContent = 'Board Number';
-        student_details_container.style.cssText = "justify-content: center !important;align-items: flex-start !important;";
+        student_details_container.style.cssText += "justify-content: center !important;align-items: flex-start !important;";
         for(let i=0;i<document.querySelectorAll(".student-details").length;i++){
             document.querySelectorAll(".student-details")[i].style.cssText = "justify-content: left;align-items: center;";
         }
