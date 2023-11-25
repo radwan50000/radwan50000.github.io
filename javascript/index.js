@@ -63,7 +63,7 @@ function changeLanguage(){
         seat_num_p.textContent = 'رقم الجلوس';
         board_floor_p.textContent = 'رقم الدور';
         board_num_p.textContent = 'رقم اللجنة';
-        student_details_container.style.cssText += "align-items: flex-end;";
+        student_details_container.style.cssText = "align-items: flex-end;";
         for(let i=0;i<document.querySelectorAll(".student-details").length;i++){
             document.querySelectorAll(".student-details")[i].style.cssText = "justify-content: right;align-items: center;";
         }
