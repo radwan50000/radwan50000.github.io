@@ -5,7 +5,7 @@
         width: 4rem !important;
     }
     
-    h1#E-D-H {
+    h1#E-D-H-1 {
         font-size: 1.4rem !important;
     }
 
@@ -39,5 +39,13 @@
 
     h5#E-D-H-5{
         font-size: small;
+    }
+}
+
+
+footer{
+
+    & p{
+        font-size: 0.7rem !important;
     }
 }

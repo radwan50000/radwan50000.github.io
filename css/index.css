@@ -92,13 +92,13 @@ main div#E-D-H-container {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 4rem 0px 1rem 0px;
+  padding: 3rem 0px 1rem 0px;
   text-align: center;
 }
 main div#E-D-H-container h1#E-D-H-1 {
   font-size: 2rem;
   color: black;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   transition: inherit;
 }
 main div#E-D-H-container h3#E-D-H-3 {
@@ -111,12 +111,12 @@ main div#radio-container {
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 30px auto;
+  margin: 1.5rem auto;
 }
 main div#radio-container div.radio-div {
   padding: 0px 10px;
   direction: ltr;
-  font-size: 14px;
+  font-size: 1.1rem;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -216,6 +216,7 @@ main div#student_details_container div.student-details {
 h5#E-D-H-5 {
   line-height: 1.3rem;
   margin: 0px auto;
+  padding: 0px 0px 4rem 0px;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -225,20 +226,26 @@ h5#E-D-H-5 {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
   margin: 3rem 0px 0px 0px;
-  height: 4rem;
+  height: 3rem;
   width: 100vw;
+}
+footer p {
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 600px) {
   #header-logo {
     width: 4rem !important;
   }
-  h1#E-D-H {
+  h1#E-D-H-1 {
     font-size: 1.4rem !important;
   }
   .radio-div {
@@ -267,6 +274,10 @@ footer {
     font-size: small;
   }
 }
+footer p {
+  font-size: 0.7rem !important;
+}
+
 @keyframes En_to_Ar_main {
   0% {
     opacity: 0;

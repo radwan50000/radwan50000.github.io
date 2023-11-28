@@ -109,13 +109,13 @@ main {
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding: 4rem 0px 1rem 0px;
+        padding: 3rem 0px 1rem 0px;
         text-align: center;
 
         & h1#E-D-H-1 {
             font-size: 2rem;
             color: black;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             transition: inherit;
         }
 
@@ -132,12 +132,13 @@ main {
         justify-content: space-between;
         align-items: center;
         width: fit-content;
-        margin: 30px auto;
+        margin: 1.5rem auto;
 
         & div.radio-div {
             padding: 0px 10px;
             direction: ltr;
-            font-size: 14px;
+            font-size: 1.1rem;
+
             width: fit-content;
             display: flex;
             justify-content: center;
@@ -249,6 +250,7 @@ main {
 h5#E-D-H-5 {
     line-height: 1.3rem;
     margin: 0px auto;
+    padding: 0px 0px 4rem 0px;
     width: fit-content;
     display: flex;
     justify-content: center;
@@ -258,14 +260,20 @@ h5#E-D-H-5 {
 
 
 footer{
-    
+    position: fixed;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $background_H_F_color;
     margin: 3rem 0px 0px 0px;
-    height: 4rem;
+    height: 3rem;
     width: 100vw;
+
+    & p{
+        font-size: 0.9rem;
+    }
 }
 
 @import '../css/pages/phone';
