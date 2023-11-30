@@ -3,7 +3,7 @@ let langButton = document.querySelector("#lang-select"),
     main = document.querySelector("main"),
     seatNumButton = document.querySelector("#seat-number"),
     resultsButton = document.querySelector("#results"),
-    english = true;
+    english = false;
 
 
 function changeLanguage(){
@@ -28,3 +28,4 @@ langButton.addEventListener("click",function(){
     changeLanguage();
 });
 
+changeLanguage();

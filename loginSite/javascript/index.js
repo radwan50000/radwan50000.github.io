@@ -11,7 +11,7 @@ let langButton = document.querySelector("#lang-select"),
     pass_field = document.querySelector("#pass-field"),
     submit_button = document.querySelector("#submit-button"),
     footer_text = document.querySelector("footer p"),
-    english = true;
+    english = false;
 
 function changeLanguage(){
     if(!english){
@@ -79,3 +79,4 @@ pass_field.addEventListener("keyup",function(){
 });
 
 enableSubmitButton();
+changeLanguage();

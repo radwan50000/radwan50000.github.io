@@ -20,7 +20,7 @@ let langButton = document.querySelector("#lang-select"),
     board_num = document.querySelector("#board-number"),
     student_details_container = document.querySelector("#student_details_container"),
     footer_text = document.querySelector("footer p"),
-    english = true,
+    english = false,
     lang = "en";
 
 
@@ -136,4 +136,4 @@ async function showData(input){
 
 
 enableSubmitButton();
-
+changeLanguage();
