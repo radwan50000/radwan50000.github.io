@@ -82,200 +82,36 @@ header.header div#headerContainer div#lang-select #selected-lang-box::selection 
   background-color: none;
 }
 
-main {
-  transition: opacity 0.5s ease-in-out;
-}
-main div#E-D-H-container {
+div#buttons-container {
+  width: 20rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+div#buttons-container a.button {
   width: 100%;
-  height: auto;
-  padding: 3rem 0px 1rem 0px;
-  text-align: center;
-}
-main div#E-D-H-container h1#E-D-H-1 {
-  font-size: 2rem;
-  color: black;
-  margin-bottom: 1.5rem;
-  transition: inherit;
-}
-main div#E-D-H-container h3#E-D-H-3 {
-  font-size: 0.7rem;
-  color: black;
-}
-main div#radio-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 1.5rem auto;
-}
-main div#radio-container div.radio-div {
-  padding: 0px 10px;
-  direction: ltr;
-  font-size: 1.1rem;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
-}
-main div#radio-container div.radio-div input[type=radio] {
-  margin: 4px;
-  cursor: pointer;
-}
-main div#radio-container div.radio-div label {
-  cursor: pointer;
-}
-main div#input-number-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  /* Firefox */
-}
-main div#input-number-container input::-webkit-outer-spin-button,
-main div#input-number-container input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-main div#input-number-container input[type=number] {
-  -moz-appearance: textfield;
-}
-main div#input-number-container input[type=number] {
-  outline: none;
-  width: 30rem;
-  height: 5rem;
-  background: rgba(221, 214, 214, 0.5);
-  border-radius: 10px;
-  border: none;
-  padding: 0px 5px 0px 15px;
-  font-size: 20px;
-  font-family: "Alexandria", sans-serif;
-  text-align: center;
-}
-main div#input-number-container input[type=number]:focus {
-  font-family: "Alexandria", sans-serif;
-}
-main #submit-button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5rem auto 2rem auto;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: transparent;
-  border-radius: 20px;
-}
-main #submit-button-container #submit-button {
-  position: relative;
-  outline: none;
-  font-size: 23px;
-  width: 24rem;
-  padding: 1rem 5rem;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: rgb(116, 185, 255);
+  background-color: #039BE5;
   color: white;
-  transition: 0.3s;
   font-family: "Alexandria", sans-serif;
-}
-main div#student_details_container {
-  display: none;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 30rem;
-  margin: 0px auto 2rem auto;
-  overflow: hidden;
-}
-main div#student_details_container p.student-details-p {
-  font-family: "Alexandria", sans-serif;
-  font-size: 1.2rem;
-  margin: 0.3rem 0px;
-}
-main div#student_details_container div.student-details {
-  width: 100%;
-  height: 3rem;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
   border-radius: 5px;
-  background-color: rgba(221, 214, 214, 0.5);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  padding: 0px 0.8rem 0px 0.6rem;
-  flex-wrap: wrap;
-}
-
-h5#E-D-H-5 {
-  line-height: 1.3rem;
-  margin: 0px auto;
-  padding: 0px 0px 4rem 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F6F6F6;
-  margin: 3rem 0px 0px 0px;
-  height: 3rem;
-  width: 100vw;
-}
-footer p {
-  font-size: 0.9rem;
-}
-
-@media screen and (max-width: 600px) {
-  #header-logo {
-    width: 4rem !important;
-  }
-  h1#E-D-H-1 {
-    font-size: 1.4rem !important;
-  }
-  .radio-div {
-    font-size: 1.2rem !important;
-  }
-  #input-number-container input[type=number] {
-    width: 20rem !important;
-    height: 4.2rem !important;
-  }
-  #submit-button {
-    width: 16rem !important;
-    font-size: 20px;
-  }
-  div#student_details_container {
-    width: 20rem !important;
-  }
-  div#student_details_container p {
-    font-size: 0.8rem;
-    margin: 0.4rem 0px;
-  }
-  div#student_details_container div.student-details {
-    width: 20rem !important;
-    font-size: 0.8rem;
-  }
-  h5#E-D-H-5 {
-    font-size: small;
-  }
-}
-footer p {
-  font-size: 0.7rem !important;
+  text-decoration: none;
 }
 
 @keyframes En_to_Ar_main {
@@ -287,14 +123,6 @@ footer p {
   }
 }
 @keyframes Ar_to_En_main {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes button_main_animation {
   0% {
     opacity: 0;
   }
