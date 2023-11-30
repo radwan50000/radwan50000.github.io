@@ -10,6 +10,7 @@ let langButton = document.querySelector("#lang-select"),
     email_field = document.querySelector("#email-field"),
     pass_field = document.querySelector("#pass-field"),
     submit_button = document.querySelector("#submit-button"),
+    footer_text = document.querySelector("footer p"),
     english = true;
 
 function changeLanguage(){
@@ -17,6 +18,7 @@ function changeLanguage(){
         selectedLangBox.style.cssText = "transform: translateX(-100%);";
         selectedLangBox.textContent = "En";
         main.style.cssText = "animation: Ar_to_En_main 0.6s ease-in-out forwards !important;";
+        footer_text.style.cssText = "animation: Ar_to_En_main 0.6s ease-in-out forwards !important;";
         header_1.textContent = "تسجيل الدخول";
         header_3.textContent = "يرجى إدخال البيانات التالية للحصول على معلوماتك";
         input_field_container.style.cssText = "direction: rtl !important";
@@ -27,10 +29,12 @@ function changeLanguage(){
         pass_field.placeholder = 'ادخل كلمة المرور';
         pass_field.style.cssText = 'text-align: right !important';
         submit_button.textContent = 'تسجيل الدخول';
+        footer_text.innerHTML = 'تم بواسطة فريق من طلاب المعهد تحت إشراف <b>أ. محمد شعبان</b> - معيد بقسم نظم';
     }else{
         selectedLangBox.style.cssText = "transform: translateX(0%);";
         selectedLangBox.textContent = "ع";
         main.style.cssText = "animation: En_to_Ar_main 0.6s ease-in-out forwards !important;";
+        footer_text.style.cssText = "animation: En_to_Ar_main 0.6s ease-in-out forwards !important;";
         header_1.textContent = "Login";
         header_3.textContent = "Please Enter Your Email And Password";
         input_field_container.style.cssText = 'direction: ltr !important;';
@@ -41,6 +45,8 @@ function changeLanguage(){
         pass_field.placeholder = 'Enter Password';
         pass_field.style.cssText = 'text-align: left !important';
         submit_button.textContent = 'Login';
+        
+        footer_text.innerHTML = 'This website by a team of institute students under the supervision of <b>Mr. Mohamed Shaban</b>.';
     }
     
 }
