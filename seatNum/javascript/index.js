@@ -20,53 +20,61 @@ let langButton = document.querySelector("#lang-select"),
     board_num = document.querySelector("#board-number"),
     student_details_container = document.querySelector("#student_details_container"),
     footer_text = document.querySelector("footer p"),
+    attr = 'ar',
     english = false,
     lang = "en";
 
-
+let language = {
+    ar: {
+        langBox: 'En',
+        header_1: 'ادخل الرقم القومي او الكود الجامعي',
+        header_3: "يرجى إدخال البيانات التالية للحصول على معلوماتك",
+        header_5: "نتمنى لك كل التوفيق في اختباراتك، يرجى عدم<br> تبادل المعلومات مع الغير ",
+        national_id: "الرقم القومي",
+        email_id: "كود الطالب",
+        input_field: "ادخل البيانات...",
+        stu_name_p: 'اسم الطالب',
+        seat_num_p: 'رقم الجلوس',
+        board_floor_p: 'رقم الدور',
+        board_num_p: 'رقم اللجنة',
+        submit_button: "استعلام",
+        footer_text: 'تم بواسطة فريق من طلاب المعهد تحت إشراف <b>أ. محمد شعبان</b> - معيد بقسم نظم',
+    },
+    en: {
+        langBox: 'ع',
+        header_1: 'Enter National ID or Student ID',
+        header_3: 'Please enter the following data for your information',
+        header_5: 'We wish you all the best in your exams. Please do not <br>share information with others',
+        national_id: 'National ID',
+        email_id: 'Student ID',
+        input_field: 'Enter Data...',
+        stu_name_p: 'Student Name',
+        seat_num_p: 'Seat Number',
+        board_floor_p: 'Board Floor',
+        board_num_p: 'Board Number',
+        submit_button: 'Submit',
+        footer_text: 'This website by a team of institute students under the supervision of <b>Mr. Mohamed Shaban</b>.',
+    }
+}
 
 function changeLanguage(){
     if(!english){
         main.style.cssText = "animation: Ar_to_En_main 0.6s ease-in-out forwards !important;";
         footer_text.style.cssText = "animation: Ar_to_En_main 0.6s ease-in-out forwards !important;";
         header_5.style.cssText = "animation: Ar_to_En_main 0.6s ease-in-out forwards !important;";
-        selectedLangBox.style.cssText = "transform: translateX(-100%);";
-        selectedLangBox.textContent = "En";
-        header_1.textContent = "ادخل الرقم القومي او الكود الجامعي";
-        header_3.textContent = "يرجى إدخال البيانات التالية للحصول على معلوماتك";
-        header_5.innerHTML = "نتمنى لك كل التوفيق في اختباراتك، يرجى عدم<br> تبادل المعلومات مع الغير ";
-        stu_name_p.textContent = 'اسم الطالب';
-        seat_num_p.textContent = 'رقم الجلوس';
-        board_floor_p.textContent = 'رقم الدور';
-        board_num_p.textContent = 'رقم اللجنة';
+        selectedLangBox.style.cssText = "transform: translateX(-100%);";;
         student_details_container.style.cssText +="align-items: flex-end !important;";
         for(let i=0;i<document.querySelectorAll(".student-details").length;i++){
             document.querySelectorAll(".student-details")[i].style.cssText = "justify-content: right;align-items: center;";
         }
-        national_id.textContent = "الرقم القومي";
-        email_id.textContent = "كود الطالب";
-        input_field.placeholder = "ادخل البيانات...";
         for(let i=0;i<radio_div.length;i++){
             radio_div[i].style.cssText = "direction: rtl";
         }
-        submit_button.textContent = "استعلام";
-        footer_text.innerHTML = 'تم بواسطة فريق من طلاب المعهد تحت إشراف <b>أ. محمد شعبان</b> - معيد بقسم نظم';
     }else{
         main.style.cssText = "animation: En_to_Ar_main 0.6s ease-in-out forwards !important;";
         footer_text.style.cssText = "animation: En_to_Ar_main 0.6s ease-in-out forwards !important;";
         header_5.style.cssText = "animation: En_to_Ar_main 0.6s ease-in-out forwards !important;";
         selectedLangBox.style.cssText = "transform: translateX(0%);";
-        selectedLangBox.textContent = "ع";
-        header_1.textContent = "Enter National ID or Student ID";
-        header_3.textContent = "Please enter the following data for your information";
-        header_5.innerHTML = "We wish you all the best in your exams. Please do not <br>share information with others";
-        national_id.textContent = "National ID";
-        email_id.textContent = "Student ID";
-        input_field.placeholder = "Enter Data...";
-        stu_name_p.textContent = 'Student Name';
-        seat_num_p.textContent = 'Seat Number';
-        board_floor_p.textContent = 'Board Floor';
-        board_num_p.textContent = 'Board Number';
         student_details_container.style.cssText += "align-items: flex-start !important;";
         for(let i=0;i<document.querySelectorAll(".student-details").length;i++){
             document.querySelectorAll(".student-details")[i].style.cssText = "justify-content: left;align-items: center;";
@@ -74,15 +82,27 @@ function changeLanguage(){
         for(let i=0;i<radio_div.length;i++){
             radio_div[i].style.cssText = "direction: ltr";
         }
-        submit_button.textContent = "Submit";
-        footer_text.innerHTML = 'This website by a team of institute students under the supervision of <b>Mr. Mohamed Shaban</b>.';
-        
     }
-    
-}
+    selectedLangBox.textContent = language[attr].langBox;
+    header_1.textContent = language[attr].header_1;
+    header_3.textContent = language[attr].header_3;
+    header_5.innerHTML = language[attr].header_5;
+    stu_name_p.textContent = language[attr].stu_name_p;
+    seat_num_p.textContent = language[attr].seat_num_p;
+    board_floor_p.textContent = language[attr].board_floor_p;
+    board_num_p.textContent = language[attr].board_floor_p;
+    national_id.textContent = language[attr].national_id;
+    email_id.textContent = language[attr].email_id;
+    input_field.placeholder = language[attr].input_field;
+    submit_button.textContent = language[attr].submit_button;
+    footer_text.innerHTML = language[attr].footer_text;
+};
+
+
 
 langButton.addEventListener("click",function(){
-    english = english == true ? false:true;
+    english = !english;
+    attr = english ? 'en':'ar';
     changeLanguage();
 });
 
