@@ -115,7 +115,6 @@ function enableSubmitButton() {
         submit_button.disabled = true;
         submit_button.style.cursor = 'not-allowed';
         submit_button.style.backgroundColor = '#5faacf';
-        submit_button.style.color = 'white';
     }
 }
 
