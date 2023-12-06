@@ -118,8 +118,10 @@ function enableSubmitButton() {
     }
 }
 
-
 input_field.addEventListener("keyup",function(){
+    if((input_field.value+'').length > 4 ){
+        input_field.value = input_field.value.slice(0,4);
+    }
     enableSubmitButton();
 })
 
@@ -130,6 +132,7 @@ input_field.addEventListener('keydown',function(e){
         }
     }
 })
+
 
 //Handle If User Enter Full Number By Paste it 
 
