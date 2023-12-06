@@ -127,7 +127,7 @@ input_field.addEventListener("keyup",function(){
 
 input_field.addEventListener('keydown',function(e){
     if((input_field.value+'').length > 3 ){
-        if(!(e.code == 'Backspace' || e.code == 'Delete' || e.code == 'deleteContentBackward')){
+        if(!(e.code == 'Backspace' || e.code == 'Delete' || e.code == 8)){
             e.preventDefault();
         }
     }
