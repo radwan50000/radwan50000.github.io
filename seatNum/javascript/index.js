@@ -133,6 +133,8 @@ input_field.addEventListener('keydown',function(e){
     }
 })
 
+input_field.addEventListener()
+
 
 //Handle If User Enter Full Number By Paste it 
 
