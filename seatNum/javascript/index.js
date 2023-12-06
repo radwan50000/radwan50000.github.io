@@ -127,11 +127,10 @@ input_field.addEventListener("keyup",function(){
 
 input_field.addEventListener('keydown',function(e){
     if((input_field.value+'').length > 3 ){
-        if(!(isNaN(e.key))){
+        if(!(e.code == 'Backspace')){
             e.preventDefault();
         }
     }
-    submit_button.textContent = e.key;
 })
 
 
