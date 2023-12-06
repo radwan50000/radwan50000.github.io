@@ -123,6 +123,27 @@ input_field.addEventListener("keyup",function(){
     enableSubmitButton();
 })
 
+input_field.addEventListener('keydown',function(e){
+    if((input_field.value+'').length > 3 ){
+        if(!(e.code == 'Backspace' || e.code == 'Delete')){
+            e.preventDefault();
+        }
+    }
+})
+
+//Handle If User Enter Full Number By Paste it 
+
+let input = document.getElementById('input-field');
+
+input.addEventListener('keydown',function(event){
+    if((input.value+'').length > 3 ){
+        if(!(event.key == 'Backspace' || event.key == 'Delete')){
+            event.preventDefault();
+        }else if ((input.value+'').length > 4){
+            input.value = input.value.slice(0,4);
+        }
+    }
+})
 
 
 async function getStudentData() {
