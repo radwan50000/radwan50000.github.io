@@ -131,6 +131,7 @@ input_field.addEventListener('keydown',function(e){
             e.preventDefault();
         }
     }
+    submit_button.textContent = e.key;
 })
 
 
