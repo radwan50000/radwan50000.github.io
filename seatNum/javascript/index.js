@@ -133,6 +133,14 @@ input_field.addEventListener('keydown',function(e){
     }
 })
 
+input_field.addEventListener('input',function(e){
+    if((input_field.value+'').length > 3 ){
+        if(!(e.code == 'Backspace')){
+            e.preventDefault();
+        }
+    }
+})
+
 
 async function getStudentData() {
     let flag = document.querySelector(
