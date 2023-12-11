@@ -96,14 +96,14 @@ main div#E-D-H-container {
   text-align: center;
 }
 main div#E-D-H-container h1#E-D-H-1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: black;
   margin-bottom: 1.5rem;
   transition: inherit;
 }
 main div#E-D-H-container h3#E-D-H-3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: normal;
   color: black;
   font-weight: 400;
@@ -121,7 +121,7 @@ main div#input-fields-container {
   margin: 0px auto;
 }
 main div#input-fields-container p.input-p {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 500;
   font-style: normal;
   line-height: 150%;
@@ -139,7 +139,7 @@ main div#input-fields-container input {
   border-radius: 10px;
   border: none;
   padding: 16px 15px;
-  font-size: 20px;
+  font-size: 1.05rem;
   font-family: "Alexandria", sans-serif;
   text-align: left;
 }
