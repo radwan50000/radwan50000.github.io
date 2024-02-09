@@ -1,0 +1,143 @@
+#about-section {
+  width: 100%;
+  height: fit-content;
+  padding: 70px 0px 0px 0px;
+  background-color: #434040;
+  border-bottom: 5px solid white;
+  overflow: hidden;
+
+  & #about-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    height: fit-content;
+    margin: 10px auto;
+
+    & img {
+      filter: invert(100%);
+      width: 1.2rem;
+      cursor: pointer;
+    }
+  }
+
+  & .about-header {
+    $main-color: #4a86d7;
+    font-weight: bold;
+    color: $main-color;
+    width: 60%;
+    line-height: 80%;
+    font-size: 8rem;
+    height: fit-content;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & div#about-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: clip;
+    overflow-y: visible;
+    z-index: 0;
+
+    & div#details {
+      $main-color: #4a86d7;
+      position: relative;
+      z-index: 99999;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      background-color: $main-color;
+      width: 60%;
+      padding: 5% 5% 5% 5%;
+      margin: 10% auto 5% auto;
+      height: fit-content;
+      text-align: start;
+      color: white;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.297);
+
+      & div#cars-div {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        top: 0%;
+        left: 0%;
+        transform: translateY(-80%);
+        overflow: hidden;
+
+        & img#sport-car {
+          position: relative;
+          width: 50px;
+          top: -1%;
+          left: 0%;
+          animation: car_move 10s linear 0s infinite forwards;
+        }
+
+        & img.polic-car {
+          position: relative;
+          width: 50px;
+          top: -1%;
+          left: -30%;
+        }
+        & img#police-car1 {
+          animation: car_move 10s linear 0.3s infinite forwards;
+        }
+        & img#police-car2 {
+          animation: car_move 10s linear 1.5s infinite forwards;
+        }
+        & img#police-car3 {
+          animation: car_move 10s linear 1s infinite forwards;
+        }
+        & img#police-helicopter {
+          rotate: 20deg;
+          margin-bottom: 20px;
+          animation: helicopter_move 10s linear 2.5s infinite forwards;
+        }
+      }
+
+      h1 {
+        position: relative;
+        z-index: 9999;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #434040;
+        margin: 3% 0%;
+      }
+
+      h2 {
+        z-index: 9999;
+        font-size: 1.3rem;
+      }
+
+      & p {
+        width: 50%;
+        height: fit-content;
+      }
+    }
+  }
+}
+
+@keyframes car_move {
+  0% {
+    top: -1%;
+    left: -60%;
+  }
+  100% {
+    top: 0%;
+    left: 300%;
+  }
+}
+
+@keyframes helicopter_move {
+  0% {
+    top: 0%;
+    left: -60%;
+  }
+  100% {
+    top: 0%;
+    left: 300%;
+  }
+}

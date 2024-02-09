@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+  #canvasContainer {
+    width: fit-content;
+    height: fit-content;
+
+    &::after {
+      font-size: 2rem;
+      letter-spacing: 5px;
+    }
+
+    canvas#space-effect {
+      width: 100vw;
+      background-color: black;
+      overflow: hidden;
+      margin: 3rem 0px;
+    }
+  }
+}

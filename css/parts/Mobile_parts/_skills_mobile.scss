@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+  h1.section-header {
+    font-size: 3rem;
+  }
+
+  main section#skills-section {
+    & #skills-container {
+      width: 90%;
+
+      & div.skill {
+        width: 80%;
+
+        &:not(:last-child) {
+          margin-bottom: 100px;
+        }
+      }
+    }
+
+    & #slider-container {
+      width: 100%;
+
+      & .slider img {
+        width: 30px;
+        height: 30px;
+        margin: 15px 40px;
+      }
+    }
+  }
+}

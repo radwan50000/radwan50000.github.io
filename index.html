@@ -1,32 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./css/index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المعهد المصري لأكاديمية الاسكندرية للإدارة والمحاسبة</title>
-    <link rel="icon" href="./images/image.ico">
-</head>
-<body>
-    <header class="header">
-        <div id="headerContainer">
-            <div id="image-logo-header">
-                <img src="./images/image.png" alt="institute logo"
-                    class="header-logo" id="header-institute-logo">
-                <img src="./images/ministry.png" alt="ministry logo"
-                    class="header-logo" id="header-ministry-logo">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Iceland&family=Londrina+Outline&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Diphylleia&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="./images/logo.ico">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muhammed-Elsayed</title>
+    </head>
+    <body id="body">
+        <header>
+            <a href="./index.html">
+                <img src="./images/logo1.jpg" alt>
+            </a>
+            <ul id="headerLists">
+                <li>skills</li>
+                <li>projects</li>
+                <li>about</li>
+                <li>contact us</li>
+            </ul>
+        </header>
+        <div id="info-part">
+            <div id="logo">
+                <div id="pumbDiv1"></div>
+                <div id="pumbDiv2"></div>
+                <img src="./images/logo1.jpg" alt="Logo-PNG">
             </div>
-            <div id="lang-select" class="ar-lang">
-                <div id="selected-lang-box">ع</div>
+            <div id="info-part-seperator">
+
+            </div>
+            <div id="name">
+                <h1>Muhammed</h1>
+                <h2>Elsayed</h2>
             </div>
         </div>
-    </header>
-    <main>
-        <div id="buttons-container">
-            <a id="results" class="button" href="./loginSite/index.html">نتيجة الفصل الدراسي</a>
-            <a id="seat-number" class="button" href="./seatNum/index.html">رقم الجلوس</a>
+        <div id="canvasContainer">
+            <canvas id="space-effect"></canvas>
+
         </div>
-    </main>
-    <script src="./javascript/index.js"></script>
-</body>
+
+        <main>
+            <section id="skills-section">
+                <h1 class="section-header">
+                    Skills
+                    <hr>
+                </h1>
+                <div id="skills-container">
+                    <div class="skill">
+                        <h3>
+                            Front End Developer
+                        </h3>
+                        <p>
+                            Can make a sites with front end technologies like
+                            <span class="span-glow"> HTML </span> , <span
+                                class="span-glow">CSS</span> , <span
+                                class="span-glow">SASS</span> , <span
+                                class="span-glow">javascript</span> , <span
+                                class="span-glow">Vue.js</span> . Like making
+                            portfolio site or landing page or Interface to shop
+                            with good structure and clean code .
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <h3>
+                            Relational Database
+                        </h3>
+                        <p>
+                            Create simple relational database of program using
+                            <span class="span-glow">SQL</span> language .
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <h3>
+                            Desktop Developer
+                        </h3>
+                        <p>
+                            Create Simple Desktop Application using <span
+                                class="span-glow">Java</span> & <span
+                                class="span-glow">Python</span> .
+                        </p>
+                    </div>
+                </div>
+                <div id="slider-container">
+                    <div class="slider">
+                        <img src="./images/html-5.png" alt="html-Lang">
+                        <img src="./images/css-3.png" alt="css-Lang">
+                        <img src="./images/js.png" alt="javascript-Lang">
+                        <img src="./images/sass.png" alt="sass-Lang">
+                        <img src="./images/vue.webp" alt="vue.js">
+                        <img src="./images/gnu-bash.png" alt="Bash-Lang">
+                        <img src="./images/java.png" alt="java-Lang">
+                        <img src="./images/python.png" alt="python-Lang">
+                        <img src="./images/sql-server.png" alt="sql-language">
+                        <img src="./images/code.png" alt="github">
+
+                    </div>
+                    <div class="slider">
+                        <img src="./images/html-5.png" alt="html-Lang">
+                        <img src="./images/css-3.png" alt="css-Lang">
+                        <img src="./images/js.png" alt="javascript-Lang">
+                        <img src="./images/sass.png" alt="sass-Lang">
+                        <img src="./images/vue.webp" alt="vue.js">
+                        <img src="./images/gnu-bash.png" alt="Bash-Lang">
+                        <img src="./images/java.png" alt="java-Lang">
+                        <img src="./images/python.png" alt="python-Lang">
+                        <img src="./images/sql-server.png" alt="sql-language">
+                        <img src="./images/code.png" alt="github">
+                    </div>
+                </div>
+            </section>
+            <section id="projects-section">
+                <img src="./images/tree5.png" alt="tree-image"
+                    class="tree-root1 tree" id="tree-1">
+                <img src="./images/tree5.png" alt="tree-image"
+                    class="tree-root2 tree" id="tree-1-rev">
+                <img src="./images/moon1.png" alt="moon-image" id="moon-img">
+                <h1 class="section-header">
+                    Projects
+                    <hr>
+                </h1>
+                <div id="projects-container">
+                    <!--Pray Icons-->
+                    <img src="./images/pray project/quran1.png" alt
+                        id="project-1-UR" class="slider-decoration">
+                    <img src="./images/pray project/quran.png" alt
+                        id="project-1-UL" class="slider-decoration">
+                    <img src="./images/pray project/tasbih.png" alt
+                        id="project-1-BR" class="slider-decoration">
+                    <img src="./images/pray project/mosque.png" alt
+                        id="project-1-BL" class="slider-decoration">
+
+                    <!--Games Icons-->
+                    <img src="./images/games project/3d-dice.png" alt
+                        id="project-2-UR" class="slider-decoration">
+                    <img src="./images/games project/card-game.png" alt
+                        id="project-2-UL" class="slider-decoration">
+                    <img src="./images/games project/game.png" alt
+                        id="project-2-BR" class="slider-decoration">
+                    <img src="./images/games project/ghost.png" alt
+                        id="project-2-BL" class="slider-decoration">
+
+                    <!--Music Icons-->
+
+                    <img src="./images/music project/music-notes.png" alt
+                        id="project-3-UR" class="slider-decoration">
+                    <img src="./images/music project/music.png" alt
+                        id="project-3-UL" class="slider-decoration">
+                    <img src="./images/music project/music1.png" alt
+                        id="project-3-BR" class="slider-decoration">
+                    <img src="./images/music project/music2.png" alt
+                        id="project-3-BL" class="slider-decoration">
+                    <div id="active-slider">
+
+                        <img src="./images/pray-project.png"
+                            alt="Islamic Pray Time Site"
+                            id="active-image-slider">
+                        <span id="right-slider-button"
+                            class="slider-button">
+                            <img src="./images/left-arrow.png" alt="left arrow">
+                        </span>
+                        <span id="left-slider-button"
+                            class="slider-button">
+                            <img src="./images/left-arrow.png" alt="left arrow">
+                        </span>
+                        <div id="project-number">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about-section">
+                <div id="about-icon-container">
+                    <img src="./images/whatsapp.png" alt="whatsapp-png">
+                    <img src="./images/mail.png" alt="mail-png">
+                    <img src="./images/linkedin.png" alt="linkedin-png">
+                    <img src="./images/instagram.png" alt="instagram-png">
+                </div>
+                <h1 class="about-header">About</h1>
+                <h6 class="about-header">Me</h6>
+                <div id="about-container">
+                    <div id="details">
+                        <div id="cars-div">
+                            <img src="./images/police-car.png" alt="police car"
+                                class="polic-car" id="police-car1">
+                                <img src="./images/police-car.png" alt="police car"
+                                class="polic-car" id="police-car2">
+                                <img src="./images/police-car.png" alt="police car"
+                                class="polic-car" id="police-car3">
+                                <img src="./images/chopper.png" alt="police helicopter"
+                                class="polic-car" id="police-helicopter">
+                                <img id="sport-car" src="./images/sport-car.png"
+                                alt="sport car">
+
+                        </div>
+                        <h1>
+                            Hello,I'm Muhammed.
+                        </h1>
+                        <h2>
+                            A {{date}}-year-old front-end developer with a
+                            passion for creating visually appealing and
+                            user-friendly websites. I specialize in HTML, CSS,
+                            and JavaScript, and I love turning design concepts
+                            into functional and interactive web pages.
+                            Additionally, I have experience in developing simple
+                            relational databases, allowing for efficient data
+                            management and retrieval. I'm also adept at building
+                            desktop applications using Java and Python,
+                            utilizing their robust libraries and frameworks. I'm
+                            constantly seeking new challenges and opportunities
+                            to expand my skills and deliver high-quality
+                            solutions to meet user needs. Let's collaborate and
+                            bring your ideas to life!
+                        </h2>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+        <div id="upButton" @click="upButton">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+            </svg>
+        </div>
+        <footer></footer>
+        <script>
+        const { createApp } = Vue;
+        
+        let button = createApp({
+            data(){
+                return{
+                    projectURL: [
+                        "https://github.com/radwan50000/prayer-site",
+                        "https://github.com/radwan50000/X-O-Game",
+                        "https://github.com/radwan50000/Music-Player",
+                        "https://github.com/radwan50000/ping-pong",
+                    ],
+                    date: new Date().getFullYear() - 2002,
+                }
+            },
+            methods: {
+                upButton(){
+                    window.scrollTo({top: 0,behavior: 'smooth',})
+                }
+            }
+        }).mount('#body')
+    </script>
+        <script src="https://kit.fontawesome.com/90d5cdeb4f.js"
+            crossorigin="anonymous"></script>
+        <script src="./javascript/canvas.js"></script>
+        <script src="./javascript/slider.js"></script>
+        <script src="./javascript/main.js"></script>
+    </body>
 </html>

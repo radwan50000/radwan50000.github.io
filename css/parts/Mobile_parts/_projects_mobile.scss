@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+  section#projects-section {
+    padding-top: 10rem;
+
+    & .tree {
+      width: 34rem;
+    }
+
+    & #projects-container {
+      $width: 100%;
+      width: $width;
+      height: fit-content;
+
+      & .image-container {
+        $size: 30rem;
+        width: $size;
+        height: $size / 2;
+      }
+    }
+  }
+}
