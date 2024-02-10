@@ -2,19 +2,66 @@
   section#projects-section {
     padding-top: 10rem;
 
+    & #moon-img {
+      $size: 6rem;
+      width: $size;
+      height: $size;
+    }
+
     & .tree {
-      width: 34rem;
+      width: 33rem;
     }
 
     & #projects-container {
       $width: 100%;
       width: $width;
       height: fit-content;
+      padding: 20px 0px;
+
+      & div#active-slider {
+        width: 95%;
+
+        & span#right-slider-button {
+          top: 120%;
+          right: 30%;
+          padding: 15px 10px;
+          border-radius: 50%;
+          background-color: white;
+          transform: translate(100%, -50%);
+
+          & img {
+            rotate: 180deg;
+          }
+        }
+
+        & span#left-slider-button {
+          top: 120%;
+          left: 30%;
+          padding: 15px 10px;
+          border-radius: 50%;
+          background-color: white;
+          transform: translate(-100%, -50%);
+
+          & img {
+            rotate: 0deg;
+          }
+        }
+
+        & img#active-image-slider {
+        }
+
+        & span.slider-button img {
+          width: 10px;
+        }
+      }
+
+      img.slider-decoration {
+        width: 40px;
+      }
 
       & .image-container {
         $size: 30rem;
         width: $size;
-        height: $size / 2;
       }
     }
   }

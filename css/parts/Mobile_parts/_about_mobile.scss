@@ -1,0 +1,51 @@
+@media (max-width: 600px) {
+  #about-section {
+
+    & #about-icon-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 30%;
+      height: fit-content;
+      margin: 0px auto 10px auto;
+
+      & img {
+        filter: invert(100%);
+        width: 1.2rem;
+        cursor: pointer;
+      }
+    }
+
+    & .about-header {
+      line-height: 90%;
+      font-size: 5rem;
+    }
+
+    & div#about-container {
+      padding-top: 2rem;
+
+      & div#details {
+        width: 90%;
+
+        h1 {
+          position: relative;
+          z-index: 9999;
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: #434040;
+          margin: 3% 0% 2% 0%;
+        }
+
+        h2 {
+          z-index: 9999;
+          font-size: 1rem;
+        }
+
+        & p {
+          width: 50%;
+          height: fit-content;
+        }
+      }
+    }
+  }
+}

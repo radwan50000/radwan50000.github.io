@@ -62,39 +62,38 @@
       & div#cars-div {
         position: absolute;
         width: 100%;
-        height: fit-content;
+        height: 100px;
         top: 0%;
         left: 0%;
-        transform: translateY(-80%);
+        transform: translateY(-100%);
         overflow: hidden;
 
         & img#sport-car {
-          position: relative;
+          position: absolute;
           width: 50px;
-          top: -1%;
-          left: 0%;
-          animation: car_move 10s linear 0s infinite forwards;
+          bottom: 0%;
+          left: -80%;
+          animation: car_move 20s linear 0s infinite forwards;
         }
 
         & img.polic-car {
-          position: relative;
+          position: absolute;
           width: 50px;
-          top: -1%;
+          bottom: 0%;
           left: -30%;
         }
         & img#police-car1 {
-          animation: car_move 10s linear 0.3s infinite forwards;
+          animation: car_move 20s linear 1s infinite forwards;
         }
         & img#police-car2 {
-          animation: car_move 10s linear 1.5s infinite forwards;
+          animation: car_move 20s linear 1.5s infinite forwards;
         }
         & img#police-car3 {
-          animation: car_move 10s linear 1s infinite forwards;
+          animation: car_move 20s linear 2.2s infinite forwards;
         }
         & img#police-helicopter {
           rotate: 20deg;
-          margin-bottom: 20px;
-          animation: helicopter_move 10s linear 2.5s infinite forwards;
+          animation: helicopter_move 20s linear 2.1s infinite forwards;
         }
       }
 
@@ -122,22 +121,22 @@
 
 @keyframes car_move {
   0% {
-    top: -1%;
+    bottom: 0%;
     left: -60%;
   }
   100% {
-    top: 0%;
-    left: 300%;
+    bottom: 0%;
+    left: 600%;
   }
 }
 
 @keyframes helicopter_move {
   0% {
-    top: 0%;
-    left: -60%;
+    top: 30%;
+    left: -90%;
   }
   100% {
-    top: 0%;
-    left: 300%;
+    top: 30%;
+    left: 700%;
   }
 }

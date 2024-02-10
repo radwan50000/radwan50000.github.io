@@ -58,62 +58,62 @@ section#projects-section {
 
     //Pray Icons
     & img#project-1-UR {
-      top: -30%;
+      top: -100%;
       right: 10%;
     }
     & img#project-1-UL {
-      top: -30%;
+      top: -100%;
       left: 15%;
     }
 
     & img#project-1-BR {
       bottom: 10%;
-      right: -30%;
+      right: -100%;
     }
 
     & img#project-1-BL {
       bottom: 30%;
-      left: -30%;
+      left: -100%;
     }
     //Games Icons
     & img#project-2-UR {
-      top: -30%;
+      top: -100%;
       right: 10%;
       animation: swim 4s linear 0s infinite forwards;
     }
     & img#project-2-UL {
-      top: -30%;
+      top: -100%;
       left: 15%;
     }
 
     & img#project-2-BR {
       bottom: 10%;
-      right: -30%;
+      right: -100%;
     }
 
     & img#project-2-BL {
       bottom: 30%;
-      left: -30%;
+      left: -100%;
     }
     //Music Icons
 
     & img#project-3-UR {
-      top: -30%;
+      top: -100%;
       right: 10%;
     }
     & img#project-3-UL {
-      top: -30%;
+      top: -100%;
       left: 15%;
     }
 
     & img#project-3-BR {
       bottom: 10%;
-      right: -30%;
+      right: -100%;
     }
 
     & img#project-3-BL {
       bottom: 30%;
-      left: -30%;
+      left: -100%;
     }
 
     & div#active-slider {
@@ -152,7 +152,7 @@ section#projects-section {
         justify-content: center;
         align-items: center;
         z-index: 999;
-        background-color: rgba(255, 255, 255, 0.466);
+        background-color: white;
         border-radius: 0px 50% 50% 0%;
         cursor: pointer;
 
@@ -168,13 +168,13 @@ section#projects-section {
 
       & div#project-number {
         position: absolute;
-        bottom: -5%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, 100%);
         background-color: rgba(0, 0, 0, 0.276);
         display: flex;
         padding: 7px 8px;
         border-radius: 10%;
+
         & span {
           $size: 6px;
           width: $size;
@@ -196,7 +196,7 @@ img.slider-decoration {
   width: 100px;
   position: absolute;
   z-index: 9999;
-  transition: 0.4s;
+  transition: 0.5s;
   animation: swim 4s linear 0s infinite forwards;
 }
 

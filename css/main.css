@@ -368,53 +368,53 @@ section#projects-section #projects-container {
   overflow: hidden;
 }
 section#projects-section #projects-container img#project-1-UR {
-  top: -30%;
+  top: -100%;
   right: 10%;
 }
 section#projects-section #projects-container img#project-1-UL {
-  top: -30%;
+  top: -100%;
   left: 15%;
 }
 section#projects-section #projects-container img#project-1-BR {
   bottom: 10%;
-  right: -30%;
+  right: -100%;
 }
 section#projects-section #projects-container img#project-1-BL {
   bottom: 30%;
-  left: -30%;
+  left: -100%;
 }
 section#projects-section #projects-container img#project-2-UR {
-  top: -30%;
+  top: -100%;
   right: 10%;
   animation: swim 4s linear 0s infinite forwards;
 }
 section#projects-section #projects-container img#project-2-UL {
-  top: -30%;
+  top: -100%;
   left: 15%;
 }
 section#projects-section #projects-container img#project-2-BR {
   bottom: 10%;
-  right: -30%;
+  right: -100%;
 }
 section#projects-section #projects-container img#project-2-BL {
   bottom: 30%;
-  left: -30%;
+  left: -100%;
 }
 section#projects-section #projects-container img#project-3-UR {
-  top: -30%;
+  top: -100%;
   right: 10%;
 }
 section#projects-section #projects-container img#project-3-UL {
-  top: -30%;
+  top: -100%;
   left: 15%;
 }
 section#projects-section #projects-container img#project-3-BR {
   bottom: 10%;
-  right: -30%;
+  right: -100%;
 }
 section#projects-section #projects-container img#project-3-BL {
   bottom: 30%;
-  left: -30%;
+  left: -100%;
 }
 section#projects-section #projects-container div#active-slider {
   position: relative;
@@ -449,7 +449,7 @@ section#projects-section #projects-container div#active-slider span.slider-butto
   justify-content: center;
   align-items: center;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.466);
+  background-color: white;
   border-radius: 0px 50% 50% 0%;
   cursor: pointer;
 }
@@ -462,9 +462,8 @@ section#projects-section #projects-container div#active-slider img#active-image-
 }
 section#projects-section #projects-container div#active-slider div#project-number {
   position: absolute;
-  bottom: -5%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 100%);
   background-color: rgba(0, 0, 0, 0.276);
   display: flex;
   padding: 7px 8px;
@@ -485,7 +484,7 @@ img.slider-decoration {
   width: 100px;
   position: absolute;
   z-index: 9999;
-  transition: 0.4s;
+  transition: 0.5s;
   animation: swim 4s linear 0s infinite forwards;
 }
 
@@ -620,39 +619,37 @@ img.slider-decoration {
 #about-section div#about-container div#details div#cars-div {
   position: absolute;
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100px;
   top: 0%;
   left: 0%;
-  transform: translateY(-80%);
+  transform: translateY(-100%);
   overflow: hidden;
 }
 #about-section div#about-container div#details div#cars-div img#sport-car {
-  position: relative;
+  position: absolute;
   width: 50px;
-  top: -1%;
-  left: 0%;
-  animation: car_move 10s linear 0s infinite forwards;
+  bottom: 0%;
+  left: -80%;
+  animation: car_move 20s linear 0s infinite forwards;
 }
 #about-section div#about-container div#details div#cars-div img.polic-car {
-  position: relative;
+  position: absolute;
   width: 50px;
-  top: -1%;
+  bottom: 0%;
   left: -30%;
 }
 #about-section div#about-container div#details div#cars-div img#police-car1 {
-  animation: car_move 10s linear 0.3s infinite forwards;
+  animation: car_move 20s linear 1s infinite forwards;
 }
 #about-section div#about-container div#details div#cars-div img#police-car2 {
-  animation: car_move 10s linear 1.5s infinite forwards;
+  animation: car_move 20s linear 1.5s infinite forwards;
 }
 #about-section div#about-container div#details div#cars-div img#police-car3 {
-  animation: car_move 10s linear 1s infinite forwards;
+  animation: car_move 20s linear 2.2s infinite forwards;
 }
 #about-section div#about-container div#details div#cars-div img#police-helicopter {
   rotate: 20deg;
-  margin-bottom: 20px;
-  animation: helicopter_move 10s linear 2.5s infinite forwards;
+  animation: helicopter_move 20s linear 2.1s infinite forwards;
 }
 #about-section div#about-container div#details h1 {
   position: relative;
@@ -674,22 +671,22 @@ img.slider-decoration {
 
 @keyframes car_move {
   0% {
-    top: -1%;
+    bottom: 0%;
     left: -60%;
   }
   100% {
-    top: 0%;
-    left: 300%;
+    bottom: 0%;
+    left: 600%;
   }
 }
 @keyframes helicopter_move {
   0% {
-    top: 0%;
-    left: -60%;
+    top: 30%;
+    left: -90%;
   }
   100% {
-    top: 0%;
-    left: 300%;
+    top: 30%;
+    left: 700%;
   }
 }
 @media (max-width: 600px) {
@@ -770,6 +767,7 @@ img.slider-decoration {
   }
   main section#skills-section #slider-container {
     width: 100%;
+    margin: 8rem auto 2rem auto !important;
   }
   main section#skills-section #slider-container .slider img {
     width: 30px;
@@ -781,16 +779,94 @@ img.slider-decoration {
   section#projects-section {
     padding-top: 10rem;
   }
+  section#projects-section #moon-img {
+    width: 6rem;
+    height: 6rem;
+  }
   section#projects-section .tree {
-    width: 34rem;
+    width: 33rem;
   }
   section#projects-section #projects-container {
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
+    padding: 20px 0px;
+  }
+  section#projects-section #projects-container div#active-slider {
+    width: 95%;
+  }
+  section#projects-section #projects-container div#active-slider span#right-slider-button {
+    top: 120%;
+    right: 30%;
+    padding: 15px 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(100%, -50%);
+  }
+  section#projects-section #projects-container div#active-slider span#right-slider-button img {
+    rotate: 180deg;
+  }
+  section#projects-section #projects-container div#active-slider span#left-slider-button {
+    top: 120%;
+    left: 30%;
+    padding: 15px 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-100%, -50%);
+  }
+  section#projects-section #projects-container div#active-slider span#left-slider-button img {
+    rotate: 0deg;
+  }
+  section#projects-section #projects-container div#active-slider span.slider-button img {
+    width: 10px;
+  }
+  section#projects-section #projects-container img.slider-decoration {
+    width: 40px;
   }
   section#projects-section #projects-container .image-container {
     width: 30rem;
-    height: 15rem;
+  }
+}
+@media (max-width: 600px) {
+  #about-section #about-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0px auto 10px auto;
+  }
+  #about-section #about-icon-container img {
+    filter: invert(100%);
+    width: 1.2rem;
+    cursor: pointer;
+  }
+  #about-section .about-header {
+    line-height: 90%;
+    font-size: 5rem;
+  }
+  #about-section div#about-container {
+    padding-top: 2rem;
+  }
+  #about-section div#about-container div#details {
+    width: 90%;
+  }
+  #about-section div#about-container div#details h1 {
+    position: relative;
+    z-index: 9999;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #434040;
+    margin: 3% 0% 2% 0%;
+  }
+  #about-section div#about-container div#details h2 {
+    z-index: 9999;
+    font-size: 1rem;
+  }
+  #about-section div#about-container div#details p {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }/*# sourceMappingURL=main.css.map */
