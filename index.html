@@ -17,31 +17,29 @@
         <title>Muhammed-Elsayed</title>
     </head>
     <body id="body">
-        <header>
-            <a href="./index.html">
-                <img src="./images/logo1.jpg" alt>
-            </a>
-            <ul id="headerLists">
-                <li>skills</li>
-                <li>projects</li>
-                <li>about</li>
-                <li>contact us</li>
-            </ul>
-        </header>
-        <div id="info-part">
-            <div id="logo">
-                <div id="pumbDiv1"></div>
-                <div id="pumbDiv2"></div>
-                <img src="./images/logo1.jpg" alt="Logo-PNG">
-            </div>
-            <div id="info-part-seperator">
+        <header id="header">
+            <div id="varient"></div>
+            <nav id="nav-bar">
+                <img src="./images/logo.png" alt="Logo" id="logoHeader">
 
-            </div>
-            <div id="name">
-                <h1>Muhammed</h1>
-                <h2>Elsayed</h2>
-            </div>
-        </div>
+                <ul id="headerLists">
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+            <!-- <h1 id="header-message" class="parralax" moveSpeed="0.041">
+                Hello
+            </h1> -->
+            <img src="./images/sky-image.jpg" alt="sky-image"
+                id="header-sky-bg" class="parralax" moveSpeed="0.123">
+            <img src="./images/cloud1.png" moveSpeed="0.0924" alt="cloud-image"
+                class="parralax" id="cloud1">
+            <img src="./images/cloud2.png" moveSpeed="0.0924" alt="cloud-image"
+                class="parralax" id="cloud2">
+        </header>
+
         <div id="canvasContainer">
             <canvas id="space-effect"></canvas>
 
@@ -190,13 +188,14 @@
                         <div id="cars-div">
                             <img src="./images/police-car.png" alt="police car"
                                 class="polic-car" id="police-car1">
-                                <img src="./images/police-car.png" alt="police car"
+                            <img src="./images/police-car.png" alt="police car"
                                 class="polic-car" id="police-car2">
-                                <img src="./images/police-car.png" alt="police car"
+                            <img src="./images/police-car.png" alt="police car"
                                 class="polic-car" id="police-car3">
-                                <img src="./images/chopper.png" alt="police helicopter"
+                            <img src="./images/chopper.png"
+                                alt="police helicopter"
                                 class="polic-car" id="police-helicopter">
-                                <img id="sport-car" src="./images/sport-car.png"
+                            <img id="sport-car" src="./images/sport-car.png"
                                 alt="sport car">
 
                         </div>
@@ -254,6 +253,7 @@
             }
         }).mount('#body')
     </script>
+        <script src="./javascript/header.js"></script>
         <script src="https://kit.fontawesome.com/90d5cdeb4f.js"
             crossorigin="anonymous"></script>
         <script src="./javascript/canvas.js"></script>
