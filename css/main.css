@@ -168,6 +168,7 @@ header div#varient {
 #canvasContainer {
   position: relative;
   z-index: 1;
+  border-top: 5px solid #101028;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
