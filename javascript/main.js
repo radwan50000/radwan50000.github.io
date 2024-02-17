@@ -34,11 +34,7 @@ window.addEventListener("scroll", function () {
     (moonPos = 0);
   if (window.scrollY >= projectScrollPosition) {
     treePos = window.scrollY / 97;
-    if (this.window.innerWidth < 700) {
-      moonPos = window.scrollY / 60;
-    } else {
-      moonPos = window.scrollY / 65;
-    }
+    moonPos = window.scrollY / 65;
 
     tree1.style.cssText = `top: ${-40 + treePos}rem;right: ${
       -40 + treePos

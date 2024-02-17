@@ -1,6 +1,24 @@
 @media (max-width: 600px) {
   header {
     padding: 10px 10px !important;
+    height: 70vh;
+
+    & img#header-sky-bg {
+      position: absolute;
+      width: 300%;
+    }
+
+    & img#cloud1 {
+      position: absolute;
+      width: 40%;
+      left: 25%;
+    }
+
+    & img#cloud2 {
+      position: absolute;
+      width: 40%;
+      right: -20%;
+    }
 
     & a img {
       $size: 40px;
@@ -14,46 +32,6 @@
         &:not(:last-child) {
           margin-right: 1rem !important;
         }
-      }
-    }
-  }
-  #info-part {
-    padding: 3rem 0rem 0rem 1rem;
-
-    & div#name {
-      & h1 {
-        $size: 2.5rem;
-        font-size: $size !important;
-
-        &::first-letter {
-          font-size: $size + 1.5rem !important;
-        }
-      }
-      & h2 {
-        $size: 2.5rem;
-        font-size: $size;
-        font-family: inherit;
-
-        &::first-letter {
-          font-size: $size + 1rem;
-          color: #d9bc3b;
-        }
-      }
-    }
-
-    & div#info-part-seperator {
-      width: 5px !important;
-      height: 15vh !important;
-      margin: 0px 1rem;
-    }
-
-    div#logo {
-      $size: 6rem;
-      width: $size;
-      height: $size;
-      & img {
-        width: $size !important;
-        height: $size !important;
       }
     }
   }
