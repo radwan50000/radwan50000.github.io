@@ -303,6 +303,7 @@ section#projects-section h1 {
 section#projects-section .tree {
   position: absolute;
   width: 40rem;
+  transition: ease-out 0.5s;
 }
 section#projects-section #moon-img {
   position: absolute;
@@ -314,6 +315,7 @@ section#projects-section #moon-img {
   opacity: 0.98;
   width: 8.5rem;
   height: 8.5rem;
+  transition: ease-out 0.5s;
 }
 section#projects-section .tree-root1 {
   rotate: -100deg;

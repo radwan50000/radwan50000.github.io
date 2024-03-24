@@ -1,0 +1,7 @@
+{
+    "pray-time":
+    {
+        "Header": "Pray Time Project",
+        "Details": "Pray Time Project in general is project that get the islamic pray time of the day and showing the Hiri Date  according to the city that you are in , the website uses a web APIs that Helping to get the name of the city you are in and other one to get the date and the pray times it help's the user to know the pray time with easy way without alot of diffculty to the very normal user"
+    }
+}

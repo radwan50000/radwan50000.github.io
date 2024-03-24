@@ -16,6 +16,7 @@ section#projects-section {
   .tree {
     position: absolute;
     width: 40rem;
+    transition: ease-out 0.5s;
   }
 
   #moon-img {
@@ -29,6 +30,7 @@ section#projects-section {
     $size: 8.5rem;
     width: $size;
     height: $size;
+    transition: ease-out 0.5s;
   }
 
   .tree-root1 {
